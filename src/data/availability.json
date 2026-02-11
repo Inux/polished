@@ -1,0 +1,92 @@
+{
+  "timezone": "Europe/Zurich",
+  "bookingSettings": {
+    "minAdvanceHours": 24,
+    "maxAdvanceDays": 30,
+    "slotDurationMinutes": 30,
+    "bufferBetweenSlots": 15
+  },
+  "owners": {
+    "owner1": {
+      "defaultWorkingHours": {
+        "monday": { "start": "09:00", "end": "18:00" },
+        "tuesday": { "start": "09:00", "end": "18:00" },
+        "wednesday": { "start": "09:00", "end": "18:00" },
+        "thursday": { "start": "09:00", "end": "20:00" },
+        "friday": { "start": "09:00", "end": "18:00" },
+        "saturday": { "start": "10:00", "end": "16:00" },
+        "sunday": null
+      },
+      "breaks": [
+        { "start": "12:00", "end": "13:00" }
+      ]
+    },
+    "owner2": {
+      "defaultWorkingHours": {
+        "monday": { "start": "10:00", "end": "19:00" },
+        "tuesday": { "start": "10:00", "end": "19:00" },
+        "wednesday": null,
+        "thursday": { "start": "10:00", "end": "19:00" },
+        "friday": { "start": "10:00", "end": "19:00" },
+        "saturday": { "start": "09:00", "end": "17:00" },
+        "sunday": null
+      },
+      "breaks": [
+        { "start": "13:00", "end": "14:00" }
+      ]
+    }
+  },
+  "exceptions": [
+    {
+      "date": "2025-12-25",
+      "owner": "all",
+      "type": "closed",
+      "reason": {
+        "de": "Weihnachten",
+        "fr": "Noel",
+        "en": "Christmas Day"
+      }
+    },
+    {
+      "date": "2025-12-26",
+      "owner": "all",
+      "type": "closed",
+      "reason": {
+        "de": "Stephanstag",
+        "fr": "Saint-Etienne",
+        "en": "St. Stephen's Day"
+      }
+    },
+    {
+      "date": "2026-01-01",
+      "owner": "all",
+      "type": "closed",
+      "reason": {
+        "de": "Neujahr",
+        "fr": "Nouvel An",
+        "en": "New Year's Day"
+      }
+    },
+    {
+      "date": "2026-01-02",
+      "owner": "all",
+      "type": "closed",
+      "reason": {
+        "de": "Berchtoldstag",
+        "fr": "Saint Berchtold",
+        "en": "Berchtold's Day"
+      }
+    },
+    {
+      "date": "2026-08-01",
+      "owner": "all",
+      "type": "closed",
+      "reason": {
+        "de": "Nationalfeiertag",
+        "fr": "Fete Nationale",
+        "en": "Swiss National Day"
+      }
+    }
+  ],
+  "blockedSlots": []
+}

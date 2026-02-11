@@ -1,0 +1,114 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "services": "Leistungen",
+    "massageWellness": "Massage & Wellness",
+    "nailArt": "Nail Art",
+    "about": "Uber uns",
+    "contact": "Kontakt",
+    "book": "Termin buchen"
+  },
+  "hero": {
+    "title": "Willkommen bei",
+    "subtitle": "Wo Wellness auf Kunst trifft",
+    "description": "Entdecken Sie unser einzigartiges Duo aus professioneller Massage & Wellness und kreativer Nail Art.",
+    "cta": "Termin vereinbaren"
+  },
+  "services": {
+    "title": "Unsere Leistungen",
+    "subtitle": "Wahlen Sie Ihren Weg zur Entspannung",
+    "viewAll": "Alle anzeigen",
+    "duration": "Dauer",
+    "minutes": "Min.",
+    "bookNow": "Jetzt buchen",
+    "featured": "Beliebt"
+  },
+  "testimonials": {
+    "title": "Das sagen unsere Kunden",
+    "subtitle": "Echte Bewertungen von zufriedenen Kunden"
+  },
+  "calendar": {
+    "title": "Termin buchen",
+    "subtitle": "Wahlen Sie Ihre bevorzugte Zeit",
+    "selectOwner": "Spezialistin wahlen",
+    "selectDate": "Datum wahlen",
+    "selectTime": "Uhrzeit wahlen",
+    "available": "Verfugbar",
+    "unavailable": "Nicht verfugbar",
+    "bookViaWhatsApp": "Uber WhatsApp buchen",
+    "closed": "Geschlossen"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Wir freuen uns auf Sie",
+    "address": "Adresse",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "whatsapp": "WhatsApp",
+    "openingHours": "Offnungszeiten",
+    "findUs": "So finden Sie uns"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten",
+    "impressum": "Impressum",
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "followUs": "Folgen Sie uns"
+  },
+  "cookies": {
+    "title": "Cookie-Einstellungen",
+    "description": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Durch die weitere Nutzung dieser Website stimmen Sie unserer Cookie-Nutzung zu.",
+    "learnMore": "Mehr erfahren",
+    "hideDetails": "Details ausblenden",
+    "necessary": "Notwendig",
+    "necessaryDesc": "Erforderlich fur die Funktion der Website",
+    "analytics": "Analyse",
+    "analyticsDesc": "Helfen uns zu verstehen, wie Besucher unsere Website nutzen",
+    "marketing": "Marketing",
+    "marketingDesc": "Fur personalisierte Werbung",
+    "acceptAll": "Alle akzeptieren",
+    "rejectAll": "Alle ablehnen",
+    "savePreferences": "Einstellungen speichern"
+  },
+  "whatsapp": {
+    "bookAppointment": "Termin buchen",
+    "greeting": "Hallo! Ich mochte einen Termin vereinbaren.",
+    "greetingWithService": "Hallo! Ich interessiere mich fur: {service}"
+  },
+  "legal": {
+    "impressumTitle": "Impressum",
+    "privacyTitle": "Datenschutzerklarung",
+    "companyInfo": "Firmeninformationen",
+    "contactInfo": "Kontaktinformationen",
+    "dataProtection": "Datenschutz",
+    "dataCollection": "Datenerhebung",
+    "cookies": "Cookies",
+    "rights": "Ihre Rechte",
+    "changes": "Anderungen"
+  },
+  "owner1": {
+    "heroTitle": "Massage & Wellness",
+    "heroSubtitle": "Finden Sie Ihre innere Ruhe",
+    "categories": "Kategorien",
+    "gallery": "Galerie",
+    "bookSession": "Sitzung buchen"
+  },
+  "owner2": {
+    "heroTitle": "Nail Art",
+    "heroSubtitle": "Wo Kreativitat auf Schonheit trifft",
+    "portfolio": "Portfolio",
+    "categories": "Kategorien",
+    "comingSoon": "Demnachst",
+    "bookAppointment": "Termin buchen"
+  },
+  "common": {
+    "loading": "Laden...",
+    "error": "Etwas ist schiefgelaufen",
+    "tryAgain": "Erneut versuchen",
+    "back": "Zuruck",
+    "next": "Weiter",
+    "previous": "Vorherige",
+    "close": "Schliessen",
+    "chf": "CHF"
+  }
+}

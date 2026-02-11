@@ -1,0 +1,99 @@
+{
+  "testimonials": [
+    {
+      "id": "testimonial-1",
+      "author": "Sarah M.",
+      "location": "Zurich",
+      "text": {
+        "de": "Die beste Massage-Erfahrung, die ich je hatte. Die spirituelle Atmosphäre und die professionelle Technik haben mich völlig erneuert.",
+        "fr": "La meilleure experience de massage que j'ai jamais eue. L'atmosphere spirituelle et la technique professionnelle m'ont completement regeneree.",
+        "en": "The best massage experience I've ever had. The spiritual atmosphere and professional technique made me feel completely renewed."
+      },
+      "rating": 5,
+      "date": "2024-11-15",
+      "owner": "owner1",
+      "service": "wellness-massage",
+      "verified": true
+    },
+    {
+      "id": "testimonial-2",
+      "author": "Lisa K.",
+      "location": "Basel",
+      "text": {
+        "de": "Unglaubliche Nail Art! Jedes Design ist einzigartig und die Liebe zum Detail ist erstaunlich. Ich bekomme immer Komplimente für meine Nägel.",
+        "fr": "Nail art incroyable! Chaque design est unique et l'attention aux details est incroyable. Je recois toujours des compliments sur mes ongles.",
+        "en": "Incredible nail art! Every design is unique and the attention to detail is amazing. I always get compliments on my nails."
+      },
+      "rating": 5,
+      "date": "2024-10-28",
+      "owner": "owner2",
+      "service": "artistic-nails",
+      "verified": true
+    },
+    {
+      "id": "testimonial-3",
+      "author": "Anna B.",
+      "location": "Bern",
+      "text": {
+        "de": "Endlich meinen Lieblingsort für Entspannung und Schönheit gefunden. Das Duo ergänzt sich perfekt!",
+        "fr": "J'ai enfin trouve mon endroit prefere pour la detente et la beaute. Le duo se complete parfaitement!",
+        "en": "Finally found my go-to place for both relaxation and beauty. The duo complements each other perfectly!"
+      },
+      "rating": 5,
+      "date": "2024-12-01",
+      "owner": null,
+      "verified": true
+    },
+    {
+      "id": "testimonial-4",
+      "author": "Maria T.",
+      "location": "Luzern",
+      "text": {
+        "de": "Die Sport-Massage hat mir bei meiner Regeneration nach dem Marathon enorm geholfen. Sehr professionell!",
+        "fr": "Le massage sportif m'a enormement aide a recuperer apres le marathon. Tres professionnel!",
+        "en": "The sports massage helped me enormously with my recovery after the marathon. Very professional!"
+      },
+      "rating": 5,
+      "date": "2024-09-20",
+      "owner": "owner1",
+      "service": "sport-massage",
+      "verified": true
+    },
+    {
+      "id": "testimonial-5",
+      "author": "Elena S.",
+      "location": "Winterthur",
+      "text": {
+        "de": "Meine Gel-Extensions halten immer perfekt und sehen fantastisch aus. Die beste Nail-Artistin der Stadt!",
+        "fr": "Mes extensions gel tiennent toujours parfaitement et sont superbes. La meilleure nail artist de la ville!",
+        "en": "My gel extensions always hold perfectly and look fantastic. The best nail artist in town!"
+      },
+      "rating": 5,
+      "date": "2024-11-05",
+      "owner": "owner2",
+      "service": "gel-extensions",
+      "verified": true
+    },
+    {
+      "id": "testimonial-6",
+      "author": "Julia R.",
+      "location": "St. Gallen",
+      "text": {
+        "de": "Die Gesichtsbehandlung war himmlisch. Meine Haut hat noch nie so gut ausgesehen!",
+        "fr": "Le soin du visage etait divin. Ma peau n'a jamais ete aussi belle!",
+        "en": "The facial treatment was heavenly. My skin has never looked so good!"
+      },
+      "rating": 5,
+      "date": "2024-10-10",
+      "owner": "owner1",
+      "service": "facial-treatment",
+      "verified": true
+    }
+  ],
+  "settings": {
+    "displayCount": 6,
+    "autoRotateSeconds": 5,
+    "showRatings": true,
+    "showDates": true
+  }
+}

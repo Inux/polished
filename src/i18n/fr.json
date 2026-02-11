@@ -1,0 +1,114 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "massageWellness": "Massage & Bien-etre",
+    "nailArt": "Nail Art",
+    "about": "A propos",
+    "contact": "Contact",
+    "book": "Reserver"
+  },
+  "hero": {
+    "title": "Bienvenue chez",
+    "subtitle": "Ou le bien-etre rencontre l'art",
+    "description": "Decouvrez notre duo unique de massage & bien-etre professionnel et de nail art creatif.",
+    "cta": "Prendre rendez-vous"
+  },
+  "services": {
+    "title": "Nos services",
+    "subtitle": "Choisissez votre chemin vers la detente",
+    "viewAll": "Voir tout",
+    "duration": "Duree",
+    "minutes": "min.",
+    "bookNow": "Reserver",
+    "featured": "Populaire"
+  },
+  "testimonials": {
+    "title": "Ce que disent nos clients",
+    "subtitle": "Avis authentiques de clients satisfaits"
+  },
+  "calendar": {
+    "title": "Reserver un rendez-vous",
+    "subtitle": "Selectionnez votre horaire prefere",
+    "selectOwner": "Choisir une specialiste",
+    "selectDate": "Choisir une date",
+    "selectTime": "Choisir une heure",
+    "available": "Disponible",
+    "unavailable": "Non disponible",
+    "bookViaWhatsApp": "Reserver via WhatsApp",
+    "closed": "Ferme"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Nous avons hate de vous rencontrer",
+    "address": "Adresse",
+    "phone": "Telephone",
+    "email": "E-mail",
+    "whatsapp": "WhatsApp",
+    "openingHours": "Horaires d'ouverture",
+    "findUs": "Comment nous trouver"
+  },
+  "footer": {
+    "rights": "Tous droits reserves",
+    "impressum": "Mentions legales",
+    "privacy": "Confidentialite",
+    "terms": "CGV",
+    "followUs": "Suivez-nous"
+  },
+  "cookies": {
+    "title": "Parametres des cookies",
+    "description": "Nous utilisons des cookies pour ameliorer votre experience. En continuant a visiter ce site, vous acceptez notre utilisation des cookies.",
+    "learnMore": "En savoir plus",
+    "hideDetails": "Masquer les details",
+    "necessary": "Necessaires",
+    "necessaryDesc": "Requis pour le fonctionnement du site",
+    "analytics": "Analytiques",
+    "analyticsDesc": "Nous aident a comprendre comment les visiteurs utilisent notre site",
+    "marketing": "Marketing",
+    "marketingDesc": "Utilises pour la publicite personnalisee",
+    "acceptAll": "Tout accepter",
+    "rejectAll": "Tout refuser",
+    "savePreferences": "Enregistrer les preferences"
+  },
+  "whatsapp": {
+    "bookAppointment": "Reserver un rendez-vous",
+    "greeting": "Bonjour! Je souhaite prendre rendez-vous.",
+    "greetingWithService": "Bonjour! Je suis interesse(e) par: {service}"
+  },
+  "legal": {
+    "impressumTitle": "Mentions legales",
+    "privacyTitle": "Politique de confidentialite",
+    "companyInfo": "Informations sur l'entreprise",
+    "contactInfo": "Coordonnees",
+    "dataProtection": "Protection des donnees",
+    "dataCollection": "Collecte de donnees",
+    "cookies": "Cookies",
+    "rights": "Vos droits",
+    "changes": "Modifications"
+  },
+  "owner1": {
+    "heroTitle": "Massage & Bien-etre",
+    "heroSubtitle": "Trouvez votre paix interieure",
+    "categories": "Categories",
+    "gallery": "Galerie",
+    "bookSession": "Reserver une seance"
+  },
+  "owner2": {
+    "heroTitle": "Nail Art",
+    "heroSubtitle": "Ou la creativite rencontre la beaute",
+    "portfolio": "Portfolio",
+    "categories": "Categories",
+    "comingSoon": "Bientot disponible",
+    "bookAppointment": "Prendre rendez-vous"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite",
+    "tryAgain": "Reessayer",
+    "back": "Retour",
+    "next": "Suivant",
+    "previous": "Precedent",
+    "close": "Fermer",
+    "chf": "CHF"
+  }
+}

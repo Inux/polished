@@ -1,0 +1,277 @@
+{
+  "owner": {
+    "id": "owner2",
+    "name": {
+      "de": "Nail Art",
+      "fr": "Nail Art",
+      "en": "Nail Art"
+    },
+    "slug": "nail-art",
+    "title": {
+      "de": "Nail Art & Design Spezialistin",
+      "fr": "Specialiste Nail Art & Design",
+      "en": "Nail Art & Design Specialist"
+    },
+    "bio": {
+      "de": "Kreative Nagelkünstlerin spezialisiert auf einzigartige Designs und künstlerische Ausdrucksformen. Jedes Design ist ein Unikat.",
+      "fr": "Artiste ongulaire creative specialisee dans les designs uniques et les expressions artistiques. Chaque design est unique.",
+      "en": "Creative nail artist specializing in unique designs and artistic expressions. Every design is one of a kind."
+    },
+    "avatar": "/images/nail-art/avatar.jpg",
+    "theme": "arty",
+    "contact": {
+      "whatsapp": "+41797654321",
+      "email": "nailart@beauty-wellness-oase.ch"
+    }
+  },
+  "categories": [
+    {
+      "id": "manicure",
+      "name": {
+        "de": "Manikure",
+        "fr": "Manucure",
+        "en": "Manicure"
+      },
+      "description": {
+        "de": "Klassische und Gel Manikure",
+        "fr": "Manucure classique et gel",
+        "en": "Classic and gel manicure services"
+      },
+      "icon": "manicure"
+    },
+    {
+      "id": "nail-art",
+      "name": {
+        "de": "Nail Art",
+        "fr": "Nail Art",
+        "en": "Nail Art"
+      },
+      "description": {
+        "de": "Kreative und künstlerische Nageldesigns",
+        "fr": "Designs d'ongles creatifs et artistiques",
+        "en": "Creative and artistic nail designs"
+      },
+      "icon": "nail-art"
+    },
+    {
+      "id": "extensions",
+      "name": {
+        "de": "Extensions",
+        "fr": "Extensions",
+        "en": "Extensions"
+      },
+      "description": {
+        "de": "Nagelverlängerungen und -verstärkungen",
+        "fr": "Extensions et renforts d'ongles",
+        "en": "Nail extensions and enhancements"
+      },
+      "icon": "extensions"
+    },
+    {
+      "id": "eyelash",
+      "name": {
+        "de": "Wimpern",
+        "fr": "Cils",
+        "en": "Eyelash"
+      },
+      "description": {
+        "de": "Professionelle Wimpernservices - Demnächst verfügbar",
+        "fr": "Services professionnels de cils - Bientot disponible",
+        "en": "Professional lash services - Coming soon"
+      },
+      "icon": "eyelash",
+      "comingSoon": true
+    }
+  ],
+  "services": [
+    {
+      "id": "classic-manicure",
+      "name": {
+        "de": "Klassische Manikure",
+        "fr": "Manucure Classique",
+        "en": "Classic Manicure"
+      },
+      "description": {
+        "de": "Professionelle Nagelpflege mit Lackierung nach Wahl.",
+        "fr": "Soins professionnels des ongles avec vernis au choix.",
+        "en": "Professional nail care with polish of your choice."
+      },
+      "duration": 45,
+      "price": 45,
+      "currency": "CHF",
+      "category": "manicure",
+      "image": "/images/nail-art/classic-manicure.jpg",
+      "featured": false
+    },
+    {
+      "id": "gel-manicure",
+      "name": {
+        "de": "Gel Manikure",
+        "fr": "Manucure Gel",
+        "en": "Gel Manicure"
+      },
+      "description": {
+        "de": "Langanhaltende Gellackierung mit professioneller Nagelpflege.",
+        "fr": "Application de vernis gel longue tenue avec soins professionnels des ongles.",
+        "en": "Long-lasting gel polish application with nail care."
+      },
+      "duration": 60,
+      "price": 65,
+      "currency": "CHF",
+      "category": "manicure",
+      "image": "/images/nail-art/gel-manicure.jpg",
+      "featured": true
+    },
+    {
+      "id": "artistic-nails",
+      "name": {
+        "de": "Künstlerische Design Nägel",
+        "fr": "Ongles Design Artistique",
+        "en": "Artistic Design Nails"
+      },
+      "description": {
+        "de": "Individuell handgemalte Nail Art - einzigartige Designs für jeden Kunden.",
+        "fr": "Nail art peint a la main personnalise - designs uniques pour chaque client.",
+        "en": "Custom hand-painted nail art - unique designs for every client."
+      },
+      "duration": 120,
+      "price": 150,
+      "currency": "CHF",
+      "category": "nail-art",
+      "image": "/images/nail-art/artistic-nails.jpg",
+      "featured": true
+    },
+    {
+      "id": "french-nails",
+      "name": {
+        "de": "French Nails",
+        "fr": "Ongles French",
+        "en": "French Nails"
+      },
+      "description": {
+        "de": "Klassischer French Look mit modernem Twist.",
+        "fr": "Look french classique avec une touche moderne.",
+        "en": "Classic French look with a modern twist."
+      },
+      "duration": 75,
+      "price": 85,
+      "currency": "CHF",
+      "category": "nail-art",
+      "image": "/images/nail-art/french-nails.jpg",
+      "featured": false
+    },
+    {
+      "id": "acrylic-extensions",
+      "name": {
+        "de": "Acryl Extensions",
+        "fr": "Extensions Acryliques",
+        "en": "Acrylic Extensions"
+      },
+      "description": {
+        "de": "Professionelle Acryl-Nagelverlängerungen mit Wunschdesign.",
+        "fr": "Extensions d'ongles en acrylique professionnelles avec design au choix.",
+        "en": "Professional acrylic nail extensions with your choice of design."
+      },
+      "duration": 90,
+      "price": 120,
+      "currency": "CHF",
+      "category": "extensions",
+      "image": "/images/nail-art/acrylic.jpg",
+      "featured": true
+    },
+    {
+      "id": "gel-extensions",
+      "name": {
+        "de": "Gel Extensions",
+        "fr": "Extensions Gel",
+        "en": "Gel Extensions"
+      },
+      "description": {
+        "de": "Gel-Nagelverlängerungen für natürliches Aussehen und Haltbarkeit.",
+        "fr": "Extensions d'ongles en gel pour un look naturel et durable.",
+        "en": "Gel nail extensions for natural look and durability."
+      },
+      "duration": 90,
+      "price": 110,
+      "currency": "CHF",
+      "category": "extensions",
+      "image": "/images/nail-art/gel-extensions.jpg",
+      "featured": false
+    },
+    {
+      "id": "nail-repair",
+      "name": {
+        "de": "Nagel Reparatur",
+        "fr": "Reparation d'Ongles",
+        "en": "Nail Repair"
+      },
+      "description": {
+        "de": "Reparatur beschädigter oder gebrochener Nägel.",
+        "fr": "Reparation des ongles endommages ou casses.",
+        "en": "Repair of damaged or broken nails."
+      },
+      "duration": 30,
+      "price": 25,
+      "currency": "CHF",
+      "category": "manicure",
+      "image": "/images/nail-art/repair.jpg",
+      "featured": false
+    }
+  ],
+  "portfolio": [
+    {
+      "src": "/images/nail-art/portfolio/design-1.jpg",
+      "alt": {
+        "de": "Florales Nail Art Design",
+        "fr": "Design nail art floral",
+        "en": "Floral nail art design"
+      },
+      "tags": ["floral", "spring", "artistic"]
+    },
+    {
+      "src": "/images/nail-art/portfolio/design-2.jpg",
+      "alt": {
+        "de": "Geometrisches modernes Design",
+        "fr": "Design moderne geometrique",
+        "en": "Geometric modern design"
+      },
+      "tags": ["geometric", "modern", "minimalist"]
+    },
+    {
+      "src": "/images/nail-art/portfolio/design-3.jpg",
+      "alt": {
+        "de": "Glitzer Ombre Nägel",
+        "fr": "Ongles ombre paillettes",
+        "en": "Glitter ombre nails"
+      },
+      "tags": ["glitter", "ombre", "party"]
+    },
+    {
+      "src": "/images/nail-art/portfolio/design-4.jpg",
+      "alt": {
+        "de": "Abstrakte Kunst Nägel",
+        "fr": "Ongles art abstrait",
+        "en": "Abstract art nails"
+      },
+      "tags": ["abstract", "artistic", "colorful"]
+    },
+    {
+      "src": "/images/nail-art/portfolio/design-5.jpg",
+      "alt": {
+        "de": "Elegante Hochzeitsnägel",
+        "fr": "Ongles de mariage elegants",
+        "en": "Elegant wedding nails"
+      },
+      "tags": ["wedding", "elegant", "white"]
+    },
+    {
+      "src": "/images/nail-art/portfolio/design-6.jpg",
+      "alt": {
+        "de": "Saison-inspiriertes Design",
+        "fr": "Design inspire par la saison",
+        "en": "Season-inspired design"
+      },
+      "tags": ["seasonal", "creative", "artistic"]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/home/Hero.astro';
+import ServicesSummary from '../components/home/ServicesSummary.astro';
+import TestimonialsCarousel from '../components/home/TestimonialsCarousel.vue';
+import CalendarWidget from '../components/home/CalendarWidget.vue';
+import ContactSection from '../components/home/ContactSection.astro';
+import { defaultLocale } from '../i18n';
+
+const locale = defaultLocale;
+---
+
+<BaseLayout locale={locale}>
+  <Hero locale={locale} />
+  <ServicesSummary locale={locale} />
+  <TestimonialsCarousel client:visible locale={locale} />
+  <CalendarWidget client:visible locale={locale} />
+  <ContactSection locale={locale} />
+</BaseLayout>

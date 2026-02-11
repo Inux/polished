@@ -1,0 +1,127 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getTranslations, defaultLocale, type Locale } from '../i18n';
+import siteConfig from '../data/site-config.json';
+
+const locale: Locale = defaultLocale;
+const t = getTranslations(locale);
+---
+
+<BaseLayout title={t.legal.impressumTitle} locale={locale}>
+  <div class="py-20 bg-gray-50 min-h-screen">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-sm p-8 md:p-12">
+        <h1 class="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-8">
+          {t.legal.impressumTitle}
+        </h1>
+
+        <!-- Company Information -->
+        <section class="mb-8">
+          <h2 class="text-xl font-semibold text-gray-900 mb-4">
+            {t.legal.companyInfo}
+          </h2>
+          <div class="text-gray-600 space-y-1">
+            <p class="font-medium text-gray-900">{siteConfig.legal.companyName}</p>
+            <p>{siteConfig.contact.address.street}</p>
+            <p>{siteConfig.contact.address.postalCode} {siteConfig.contact.address.city}</p>
+            <p>{siteConfig.contact.address.country}</p>
+            {siteConfig.legal.uid && (
+              <p class="mt-4">
+                <span class="font-medium">UID:</span> {siteConfig.legal.uid}
+              </p>
+            )}
+          </div>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="mb-8">
+          <h2 class="text-xl font-semibold text-gray-900 mb-4">
+            {t.legal.contactInfo}
+          </h2>
+          <div class="text-gray-600 space-y-2">
+            <p>
+              <span class="font-medium">{t.contact.phone}:</span>{' '}
+              <a href={`tel:${siteConfig.contact.phone}`} class="text-gray-900 hover:underline">
+                {siteConfig.contact.phone}
+              </a>
+            </p>
+            <p>
+              <span class="font-medium">{t.contact.email}:</span>{' '}
+              <a href={`mailto:${siteConfig.contact.email}`} class="text-gray-900 hover:underline">
+                {siteConfig.contact.email}
+              </a>
+            </p>
+          </div>
+        </section>
+
+        <!-- Disclaimer (German legal requirement) -->
+        <section class="mb-8">
+          <h2 class="text-xl font-semibold text-gray-900 mb-4">
+            {locale === 'de' ? 'Haftungsausschluss' : locale === 'fr' ? 'Clause de non-responsabilite' : 'Disclaimer'}
+          </h2>
+          <div class="text-gray-600 space-y-4 text-sm">
+            {locale === 'de' ? (
+              <>
+                <p>
+                  Der Autor übernimmt keinerlei Gewähr hinsichtlich der inhaltlichen Richtigkeit, Genauigkeit, Aktualität, Zuverlässigkeit und Vollständigkeit der Informationen.
+                </p>
+                <p>
+                  Haftungsansprüche gegen den Autor wegen Schäden materieller oder immaterieller Art, welche aus dem Zugriff oder der Nutzung bzw. Nichtnutzung der veröffentlichten Informationen, durch Missbrauch der Verbindung oder durch technische Störungen entstanden sind, werden ausgeschlossen.
+                </p>
+                <p>
+                  Alle Angebote sind unverbindlich. Der Autor behält es sich ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne gesonderte Ankündigung zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen.
+                </p>
+              </>
+            ) : locale === 'fr' ? (
+              <>
+                <p>
+                  L'auteur n'assume aucune responsabilité quant à l'exactitude, la precision, l'actualite, la fiabilite et l'exhaustivite des informations.
+                </p>
+                <p>
+                  Les reclamations en responsabilite contre l'auteur pour des dommages materiels ou immateriels resultant de l'acces ou de l'utilisation ou de la non-utilisation des informations publiees, de l'utilisation abusive de la connexion ou de problemes techniques sont exclues.
+                </p>
+                <p>
+                  Toutes les offres sont sans engagement. L'auteur se reserve expressement le droit de modifier, completer ou supprimer des parties des pages ou l'ensemble de l'offre sans avis prealable ou de cesser la publication temporairement ou definitivement.
+                </p>
+              </>
+            ) : (
+              <>
+                <p>
+                  The author assumes no liability for the correctness, accuracy, timeliness, reliability, or completeness of the information.
+                </p>
+                <p>
+                  Liability claims against the author for material or immaterial damages resulting from access to, use or non-use of the published information, misuse of the connection, or technical malfunctions are excluded.
+                </p>
+                <p>
+                  All offers are non-binding. The author expressly reserves the right to change, supplement, or delete parts of the pages or the entire offer without prior notice, or to cease publication temporarily or permanently.
+                </p>
+              </>
+            )}
+          </div>
+        </section>
+
+        <!-- Copyright -->
+        <section>
+          <h2 class="text-xl font-semibold text-gray-900 mb-4">
+            {locale === 'de' ? 'Urheberrecht' : locale === 'fr' ? 'Droits d\'auteur' : 'Copyright'}
+          </h2>
+          <div class="text-gray-600 text-sm">
+            {locale === 'de' ? (
+              <p>
+                Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf der Website gehören ausschliesslich {siteConfig.legal.companyName} oder den speziell genannten Rechtsinhabern. Für die Reproduktion jeglicher Elemente ist die schriftliche Zustimmung der Urheberrechtsträger im Voraus einzuholen.
+              </p>
+            ) : locale === 'fr' ? (
+              <p>
+                Les droits d'auteur et tous les autres droits sur le contenu, les images, les photos ou autres fichiers du site appartiennent exclusivement a {siteConfig.legal.companyName} ou aux titulaires de droits specifiquement mentionnes. Pour la reproduction de tout element, le consentement ecrit des titulaires des droits d'auteur doit etre obtenu au prealable.
+              </p>
+            ) : (
+              <p>
+                The copyright and all other rights to content, images, photos, or other files on the website belong exclusively to {siteConfig.legal.companyName} or the specifically named rights holders. For the reproduction of any elements, the written consent of the copyright holders must be obtained in advance.
+              </p>
+            )}
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
