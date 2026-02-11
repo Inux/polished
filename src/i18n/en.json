@@ -1,0 +1,114 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "massageWellness": "Massage & Wellness",
+    "nailArt": "Nail Art",
+    "about": "About",
+    "contact": "Contact",
+    "book": "Book Now"
+  },
+  "hero": {
+    "title": "Welcome to",
+    "subtitle": "Where Wellness Meets Art",
+    "description": "Discover our unique duo of professional massage & wellness and creative nail art.",
+    "cta": "Book an Appointment"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Choose your path to relaxation",
+    "viewAll": "View all",
+    "duration": "Duration",
+    "minutes": "min.",
+    "bookNow": "Book now",
+    "featured": "Popular"
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Real reviews from satisfied customers"
+  },
+  "calendar": {
+    "title": "Book an Appointment",
+    "subtitle": "Select your preferred time",
+    "selectOwner": "Choose specialist",
+    "selectDate": "Choose date",
+    "selectTime": "Choose time",
+    "available": "Available",
+    "unavailable": "Unavailable",
+    "bookViaWhatsApp": "Book via WhatsApp",
+    "closed": "Closed"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "We look forward to meeting you",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "openingHours": "Opening Hours",
+    "findUs": "How to Find Us"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "impressum": "Imprint",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "followUs": "Follow Us"
+  },
+  "cookies": {
+    "title": "Cookie Settings",
+    "description": "We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.",
+    "learnMore": "Learn more",
+    "hideDetails": "Hide details",
+    "necessary": "Necessary",
+    "necessaryDesc": "Required for the website to function",
+    "analytics": "Analytics",
+    "analyticsDesc": "Help us understand how visitors use our site",
+    "marketing": "Marketing",
+    "marketingDesc": "Used for personalized advertisements",
+    "acceptAll": "Accept All",
+    "rejectAll": "Reject All",
+    "savePreferences": "Save Preferences"
+  },
+  "whatsapp": {
+    "bookAppointment": "Book Appointment",
+    "greeting": "Hello! I would like to book an appointment.",
+    "greetingWithService": "Hello! I'm interested in: {service}"
+  },
+  "legal": {
+    "impressumTitle": "Imprint",
+    "privacyTitle": "Privacy Policy",
+    "companyInfo": "Company Information",
+    "contactInfo": "Contact Information",
+    "dataProtection": "Data Protection",
+    "dataCollection": "Data Collection",
+    "cookies": "Cookies",
+    "rights": "Your Rights",
+    "changes": "Changes"
+  },
+  "owner1": {
+    "heroTitle": "Massage & Wellness",
+    "heroSubtitle": "Find Your Inner Peace",
+    "categories": "Categories",
+    "gallery": "Gallery",
+    "bookSession": "Book a Session"
+  },
+  "owner2": {
+    "heroTitle": "Nail Art",
+    "heroSubtitle": "Where Creativity Meets Beauty",
+    "portfolio": "Portfolio",
+    "categories": "Categories",
+    "comingSoon": "Coming Soon",
+    "bookAppointment": "Book Appointment"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "tryAgain": "Try again",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "close": "Close",
+    "chf": "CHF"
+  }
+}

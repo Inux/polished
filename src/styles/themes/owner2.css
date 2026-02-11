@@ -1,0 +1,170 @@
+/* Owner 2 Theme: Nail Art - Arty, Creative, Bold */
+.theme-owner2 {
+  /* Primary palette - vibrant purples and pinks */
+  --color-primary-50: #fdf4ff;
+  --color-primary-100: #fae8ff;
+  --color-primary-200: #f5d0fe;
+  --color-primary-300: #f0abfc;
+  --color-primary-400: #e879f9;
+  --color-primary-500: #d946ef;
+  --color-primary-600: #c026d3;
+  --color-primary-700: #a21caf;
+  --color-primary-800: #86198f;
+  --color-primary-900: #701a75;
+
+  /* Accent - electric blue for contrast */
+  --color-accent-500: #3b82f6;
+  --color-accent-600: #2563eb;
+
+  /* Secondary - coral/peach */
+  --color-secondary-400: #fb7185;
+  --color-secondary-500: #f43f5e;
+
+  /* Background tones */
+  --color-bg-primary: #fafafa;
+  --color-bg-secondary: #f5f3ff;
+  --color-bg-accent: #fdf2f8;
+
+  /* Text colors */
+  --color-text-primary: #18181b;
+  --color-text-secondary: #3f3f46;
+  --color-text-muted: #71717a;
+
+  /* Decorative */
+  --color-border: #e4e4e7;
+  --gradient-hero: linear-gradient(135deg, #fdf4ff 0%, #f5f3ff 50%, #fdf2f8 100%);
+  --gradient-primary: linear-gradient(135deg, #d946ef 0%, #c026d3 50%, #a855f7 100%);
+  --gradient-artistic: linear-gradient(135deg, #f43f5e 0%, #d946ef 50%, #3b82f6 100%);
+
+  /* Typography - modern/bold */
+  --font-display: 'Poppins', sans-serif;
+}
+
+/* Hero section */
+.theme-owner2 .hero {
+  background: var(--gradient-hero);
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-owner2 .hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(217, 70, 239, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.theme-owner2 .hero::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Service cards */
+.theme-owner2 .service-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 300ms ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-owner2 .service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-artistic);
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.theme-owner2 .service-card:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+.theme-owner2 .service-card:hover::before {
+  opacity: 1;
+}
+
+/* Primary button */
+.theme-owner2 .btn-primary {
+  background: var(--gradient-primary);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: all 300ms ease-in-out;
+  box-shadow: 0 4px 14px 0 rgba(217, 70, 239, 0.3);
+}
+
+.theme-owner2 .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px 0 rgba(217, 70, 239, 0.4);
+}
+
+/* Section titles */
+.theme-owner2 .section-title {
+  color: var(--color-primary-600);
+}
+
+.theme-owner2 .section-title span {
+  background: var(--gradient-artistic);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Portfolio gallery */
+.theme-owner2 .portfolio-item {
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.theme-owner2 .portfolio-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.theme-owner2 .portfolio-item:hover::after {
+  opacity: 1;
+}
+
+/* Tags */
+.theme-owner2 .tag {
+  background: var(--color-primary-100);
+  color: var(--color-primary-700);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* Coming soon badge */
+.theme-owner2 .badge-coming-soon {
+  background: var(--gradient-artistic);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}

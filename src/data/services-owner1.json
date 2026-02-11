@@ -1,0 +1,235 @@
+{
+  "owner": {
+    "id": "owner1",
+    "name": {
+      "de": "Massage & Wellness",
+      "fr": "Massage & Bien-etre",
+      "en": "Massage & Wellness"
+    },
+    "slug": "massage-wellness",
+    "title": {
+      "de": "Massage & Wellness Spezialistin",
+      "fr": "Specialiste Massage & Bien-etre",
+      "en": "Massage & Wellness Specialist"
+    },
+    "bio": {
+      "de": "Mit jahrelanger Erfahrung in therapeutischen und Wellness-Behandlungen biete ich Ihnen eine Oase der Ruhe und Erholung.",
+      "fr": "Avec des annees d'experience dans les traitements therapeutiques et de bien-etre, je vous offre une oasis de calme et de detente.",
+      "en": "With years of experience in therapeutic and wellness treatments, I offer you an oasis of calm and relaxation."
+    },
+    "avatar": "/images/massage-wellness/avatar.jpg",
+    "theme": "spiritual",
+    "contact": {
+      "whatsapp": "+41791234567",
+      "email": "wellness@beauty-wellness-oase.ch"
+    }
+  },
+  "categories": [
+    {
+      "id": "massage",
+      "name": {
+        "de": "Massagen",
+        "fr": "Massages",
+        "en": "Massages"
+      },
+      "description": {
+        "de": "Therapeutische und Entspannungsmassagen",
+        "fr": "Massages therapeutiques et de relaxation",
+        "en": "Therapeutic and relaxation massages"
+      },
+      "icon": "massage"
+    },
+    {
+      "id": "waxing",
+      "name": {
+        "de": "Waxing",
+        "fr": "Epilation",
+        "en": "Waxing"
+      },
+      "description": {
+        "de": "Professionelle Haarentfernung",
+        "fr": "Epilation professionnelle",
+        "en": "Professional hair removal"
+      },
+      "icon": "waxing"
+    },
+    {
+      "id": "cosmetics",
+      "name": {
+        "de": "Kosmetik",
+        "fr": "Cosmetique",
+        "en": "Cosmetics"
+      },
+      "description": {
+        "de": "Gesichtsbehandlungen und Hautpflege",
+        "fr": "Soins du visage et soins de la peau",
+        "en": "Facial treatments and skincare"
+      },
+      "icon": "cosmetics"
+    }
+  ],
+  "services": [
+    {
+      "id": "sport-massage",
+      "name": {
+        "de": "Sport Massage",
+        "fr": "Massage Sportif",
+        "en": "Sport Massage"
+      },
+      "description": {
+        "de": "Tiefengewebsmassage zur Muskelregeneration und Leistungssteigerung.",
+        "fr": "Massage des tissus profonds pour la recuperation musculaire et l'amelioration des performances.",
+        "en": "Deep tissue massage targeting muscle recovery and athletic performance."
+      },
+      "duration": 60,
+      "price": 120,
+      "currency": "CHF",
+      "category": "massage",
+      "image": "/images/massage-wellness/sport-massage.jpg",
+      "featured": true
+    },
+    {
+      "id": "wellness-massage",
+      "name": {
+        "de": "Wellness Massage",
+        "fr": "Massage Bien-etre",
+        "en": "Wellness Massage"
+      },
+      "description": {
+        "de": "Entspannende Ganzkörpermassage zum Stressabbau und zur Regeneration.",
+        "fr": "Massage corporel relaxant pour soulager le stress et rajeunir.",
+        "en": "Relaxing full-body massage for stress relief and rejuvenation."
+      },
+      "duration": 90,
+      "price": 150,
+      "currency": "CHF",
+      "category": "massage",
+      "image": "/images/massage-wellness/wellness-massage.jpg",
+      "featured": true
+    },
+    {
+      "id": "hot-stone-massage",
+      "name": {
+        "de": "Hot Stone Massage",
+        "fr": "Massage aux Pierres Chaudes",
+        "en": "Hot Stone Massage"
+      },
+      "description": {
+        "de": "Entspannende Massage mit warmen Basaltsteinen für tiefe Muskelentspannung.",
+        "fr": "Massage relaxant aux pierres de basalte chaudes pour une relaxation musculaire profonde.",
+        "en": "Relaxing massage with warm basalt stones for deep muscle relaxation."
+      },
+      "duration": 75,
+      "price": 140,
+      "currency": "CHF",
+      "category": "massage",
+      "image": "/images/massage-wellness/hot-stone.jpg",
+      "featured": false
+    },
+    {
+      "id": "full-body-waxing",
+      "name": {
+        "de": "Ganzkörper Waxing",
+        "fr": "Epilation Corps Entier",
+        "en": "Full Body Waxing"
+      },
+      "description": {
+        "de": "Komplette Körperenthaarung mit Premium-Wachs.",
+        "fr": "Epilation complete du corps avec cire premium.",
+        "en": "Complete body hair removal with premium wax."
+      },
+      "duration": 120,
+      "price": 200,
+      "currency": "CHF",
+      "category": "waxing",
+      "image": "/images/massage-wellness/waxing.jpg",
+      "featured": false
+    },
+    {
+      "id": "leg-waxing",
+      "name": {
+        "de": "Bein Waxing",
+        "fr": "Epilation Jambes",
+        "en": "Leg Waxing"
+      },
+      "description": {
+        "de": "Professionelle Beinenthaarung für glatte Haut.",
+        "fr": "Epilation professionnelle des jambes pour une peau lisse.",
+        "en": "Professional leg hair removal for smooth skin."
+      },
+      "duration": 45,
+      "price": 60,
+      "currency": "CHF",
+      "category": "waxing",
+      "image": "/images/massage-wellness/leg-waxing.jpg",
+      "featured": false
+    },
+    {
+      "id": "facial-treatment",
+      "name": {
+        "de": "Signature Gesichtsbehandlung",
+        "fr": "Soin Visage Signature",
+        "en": "Signature Facial"
+      },
+      "description": {
+        "de": "Individuelle Gesichtsbehandlung für strahlende, gesunde Haut.",
+        "fr": "Soin du visage personnalise pour une peau eclatante et saine.",
+        "en": "Customized facial treatment for radiant, healthy skin."
+      },
+      "duration": 75,
+      "price": 130,
+      "currency": "CHF",
+      "category": "cosmetics",
+      "image": "/images/massage-wellness/facial.jpg",
+      "featured": true
+    },
+    {
+      "id": "anti-aging-treatment",
+      "name": {
+        "de": "Anti-Aging Behandlung",
+        "fr": "Traitement Anti-Age",
+        "en": "Anti-Aging Treatment"
+      },
+      "description": {
+        "de": "Intensive Behandlung zur Hautverjüngung und Faltenreduktion.",
+        "fr": "Traitement intensif pour le rajeunissement de la peau et la reduction des rides.",
+        "en": "Intensive treatment for skin rejuvenation and wrinkle reduction."
+      },
+      "duration": 90,
+      "price": 180,
+      "currency": "CHF",
+      "category": "cosmetics",
+      "image": "/images/massage-wellness/anti-aging.jpg",
+      "featured": false
+    }
+  ],
+  "gallery": [
+    {
+      "src": "/images/massage-wellness/gallery/studio-1.jpg",
+      "alt": {
+        "de": "Massage Behandlungsraum",
+        "fr": "Salle de traitement de massage",
+        "en": "Massage treatment room"
+      },
+      "category": "studio"
+    },
+    {
+      "src": "/images/massage-wellness/gallery/treatment-1.jpg",
+      "alt": {
+        "de": "Entspannungsmassage",
+        "fr": "Massage de relaxation",
+        "en": "Relaxation massage session"
+      },
+      "category": "treatment"
+    },
+    {
+      "src": "/images/massage-wellness/gallery/studio-2.jpg",
+      "alt": {
+        "de": "Wellness Ambiente",
+        "fr": "Ambiance bien-etre",
+        "en": "Wellness ambiance"
+      },
+      "category": "studio"
+    }
+  ]
+}

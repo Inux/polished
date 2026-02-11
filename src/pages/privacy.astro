@@ -1,0 +1,225 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getTranslations, defaultLocale, type Locale } from '../i18n';
+import siteConfig from '../data/site-config.json';
+
+const locale: Locale = defaultLocale;
+const t = getTranslations(locale);
+
+const lastUpdated = new Date().toLocaleDateString(
+  locale === 'de' ? 'de-CH' : locale === 'fr' ? 'fr-CH' : 'en-US',
+  { year: 'numeric', month: 'long', day: 'numeric' }
+);
+---
+
+<BaseLayout title={t.legal.privacyTitle} locale={locale}>
+  <div class="py-20 bg-gray-50 min-h-screen">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-sm p-8 md:p-12">
+        <h1 class="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
+          {t.legal.privacyTitle}
+        </h1>
+        <p class="text-sm text-gray-500 mb-8">
+          {locale === 'de' ? 'Letzte Aktualisierung' : locale === 'fr' ? 'Derniere mise a jour' : 'Last updated'}: {lastUpdated}
+        </p>
+
+        <div class="prose prose-gray max-w-none">
+          {locale === 'de' ? (
+            <>
+              <section class="mb-8">
+                <h2 class="text-xl font-semibold text-gray-900 mb-4">1. Verantwortliche Stelle</h2>
+                <p class="text-gray-600 mb-4">
+                  Verantwortlich für die Datenverarbeitung auf dieser Website ist:
+                </p>
+                <p class="text-gray-600">
+                  {siteConfig.legal.companyName}<br />
+                  {siteConfig.contact.address.street}<br />
+                  {siteConfig.contact.address.postalCode} {siteConfig.contact.address.city}<br />
+                  E-Mail: {siteConfig.contact.email}
+                </p>
+              </section>
+
+              <section class="mb-8">
+                <h2 class="text-xl font-semibold text-gray-900 mb-4">2. Erhebung und Verarbeitung von Daten</h2>
+                <p class="text-gray-600 mb-4">
+                  Wir erheben und verarbeiten personenbezogene Daten nur, soweit dies zur Bereitstellung einer funktionsfähigen Website sowie unserer Inhalte und Leistungen erforderlich ist.
+                </p>
+                <h3 class="text-lg font-medium text-gray-900 mb-2">2.1 Kontaktaufnahme</h3>
+                <p class="text-gray-600 mb-4">
+                  Wenn Sie uns per E-Mail, WhatsApp oder Telefon kontaktieren, werden die von Ihnen mitgeteilten Daten (Ihre E-Mail-Adresse, ggf. Ihr Name und Ihre Telefonnummer) von uns gespeichert, um Ihre Fragen zu beantworten und Termine zu vereinbaren.
+                </p>
+                <h3 class="text-lg font-medium text-gray-900 mb-2">2.2 WhatsApp</h3>
+                <p class="text-gray-600">
+                  Wir nutzen WhatsApp für die Kommunikation mit unseren Kunden. Bei der Nutzung von WhatsApp gelten die Datenschutzbestimmungen von WhatsApp (Meta). Wir empfehlen Ihnen, sich über die Datenschutzpraktiken von WhatsApp zu informieren.
+                </p>
+              </section>
+
+              <section class="mb-8">
+                <h2 class="text-xl font-semibold text-gray-900 mb-4">3. Cookies</h2>
+                <p class="text-gray-600 mb-4">
+                  Unsere Website verwendet Cookies. Cookies sind kleine Textdateien, die auf Ihrem Endgerät gespeichert werden. Sie ermöglichen eine Analyse der Benutzung der Website.
+                </p>
+                <h3 class="text-lg font-medium text-gray-900 mb-2">3.1 Notwendige Cookies</h3>
+                <p class="text-gray-600 mb-4">
+                  Diese Cookies sind für den Betrieb der Website erforderlich und können nicht deaktiviert werden.
+                </p>
+                <h3 class="text-lg font-medium text-gray-900 mb-2">3.2 Analyse-Cookies</h3>
+                <p class="text-gray-600 mb-4">
+                  Mit Ihrer Zustimmung verwenden wir Analyse-Cookies, um zu verstehen, wie Besucher mit unserer Website interagieren.
+                </p>
+                <h3 class="text-lg font-medium text-gray-900 mb-2">3.3 Marketing-Cookies</h3>
+                <p class="text-gray-600">
+                  Mit Ihrer Zustimmung verwenden wir Marketing-Cookies für personalisierte Werbung.
+                </p>
+              </section>
+
+              <section class="mb-8">
+                <h2 class="text-xl font-semibold text-gray-900 mb-4">4. Ihre Rechte</h2>
+                <p class="text-gray-600 mb-4">
+                  Sie haben das Recht:
+                </p>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                  <li>Auskunft über Ihre gespeicherten personenbezogenen Daten zu erhalten</li>
+                  <li>Die Berichtigung unrichtiger Daten zu verlangen</li>
+                  <li>Die Löschung Ihrer Daten zu verlangen</li>
+                  <li>Die Einschränkung der Verarbeitung zu verlangen</li>
+                  <li>Der Verarbeitung zu widersprechen</li>
+                  <li>Ihre Daten in einem übertragbaren Format zu erhalten</li>
+                </ul>
+              </section>
+
+              <section>
+                <h2 class="text-xl font-semibold text-gray-900 mb-4">5. Änderungen</h2>
+                <p class="text-gray-600">
+                  Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen, um sie an geänderte Rechtslagen oder bei Änderungen unserer Dienste anzupassen.
+                </p>
+              </section>
+            </>
+          ) : locale === 'fr' ? (
+            <>
+              <section class="mb-8">
+                <h2 class="text-xl font-semibold text-gray-900 mb-4">1. Responsable</h2>
+                <p class="text-gray-600 mb-4">
+                  Le responsable du traitement des donnees sur ce site est:
+                </p>
+                <p class="text-gray-600">
+                  {siteConfig.legal.companyName}<br />
+                  {siteConfig.contact.address.street}<br />
+                  {siteConfig.contact.address.postalCode} {siteConfig.contact.address.city}<br />
+                  E-mail: {siteConfig.contact.email}
+                </p>
+              </section>
+
+              <section class="mb-8">
+                <h2 class="text-xl font-semibold text-gray-900 mb-4">2. Collecte et traitement des donnees</h2>
+                <p class="text-gray-600 mb-4">
+                  Nous ne collectons et ne traitons les donnees personnelles que dans la mesure ou cela est necessaire pour fournir un site web fonctionnel ainsi que nos contenus et services.
+                </p>
+                <h3 class="text-lg font-medium text-gray-900 mb-2">2.1 Contact</h3>
+                <p class="text-gray-600 mb-4">
+                  Lorsque vous nous contactez par e-mail, WhatsApp ou telephone, les donnees que vous nous communiquez sont stockees pour repondre a vos questions et prendre des rendez-vous.
+                </p>
+                <h3 class="text-lg font-medium text-gray-900 mb-2">2.2 WhatsApp</h3>
+                <p class="text-gray-600">
+                  Nous utilisons WhatsApp pour communiquer avec nos clients. L'utilisation de WhatsApp est soumise a la politique de confidentialite de WhatsApp (Meta).
+                </p>
+              </section>
+
+              <section class="mb-8">
+                <h2 class="text-xl font-semibold text-gray-900 mb-4">3. Cookies</h2>
+                <p class="text-gray-600 mb-4">
+                  Notre site web utilise des cookies. Les cookies sont de petits fichiers texte stockes sur votre appareil.
+                </p>
+              </section>
+
+              <section class="mb-8">
+                <h2 class="text-xl font-semibold text-gray-900 mb-4">4. Vos droits</h2>
+                <p class="text-gray-600 mb-4">
+                  Vous avez le droit de demander l'acces, la rectification, la suppression ou la portabilite de vos donnees personnelles.
+                </p>
+              </section>
+
+              <section>
+                <h2 class="text-xl font-semibold text-gray-900 mb-4">5. Modifications</h2>
+                <p class="text-gray-600">
+                  Nous nous reservons le droit de modifier cette politique de confidentialite si necessaire.
+                </p>
+              </section>
+            </>
+          ) : (
+            <>
+              <section class="mb-8">
+                <h2 class="text-xl font-semibold text-gray-900 mb-4">1. Data Controller</h2>
+                <p class="text-gray-600 mb-4">
+                  The party responsible for data processing on this website is:
+                </p>
+                <p class="text-gray-600">
+                  {siteConfig.legal.companyName}<br />
+                  {siteConfig.contact.address.street}<br />
+                  {siteConfig.contact.address.postalCode} {siteConfig.contact.address.city}<br />
+                  Email: {siteConfig.contact.email}
+                </p>
+              </section>
+
+              <section class="mb-8">
+                <h2 class="text-xl font-semibold text-gray-900 mb-4">2. Data Collection and Processing</h2>
+                <p class="text-gray-600 mb-4">
+                  We only collect and process personal data to the extent necessary to provide a functional website and our content and services.
+                </p>
+                <h3 class="text-lg font-medium text-gray-900 mb-2">2.1 Contact</h3>
+                <p class="text-gray-600 mb-4">
+                  When you contact us via email, WhatsApp, or phone, the data you provide will be stored to answer your questions and schedule appointments.
+                </p>
+                <h3 class="text-lg font-medium text-gray-900 mb-2">2.2 WhatsApp</h3>
+                <p class="text-gray-600">
+                  We use WhatsApp to communicate with our customers. When using WhatsApp, WhatsApp's (Meta) privacy policy applies.
+                </p>
+              </section>
+
+              <section class="mb-8">
+                <h2 class="text-xl font-semibold text-gray-900 mb-4">3. Cookies</h2>
+                <p class="text-gray-600 mb-4">
+                  Our website uses cookies. Cookies are small text files stored on your device that enable analysis of website usage.
+                </p>
+                <h3 class="text-lg font-medium text-gray-900 mb-2">3.1 Necessary Cookies</h3>
+                <p class="text-gray-600 mb-4">
+                  These cookies are required for website operation and cannot be disabled.
+                </p>
+                <h3 class="text-lg font-medium text-gray-900 mb-2">3.2 Analytics Cookies</h3>
+                <p class="text-gray-600 mb-4">
+                  With your consent, we use analytics cookies to understand how visitors interact with our website.
+                </p>
+                <h3 class="text-lg font-medium text-gray-900 mb-2">3.3 Marketing Cookies</h3>
+                <p class="text-gray-600">
+                  With your consent, we use marketing cookies for personalized advertising.
+                </p>
+              </section>
+
+              <section class="mb-8">
+                <h2 class="text-xl font-semibold text-gray-900 mb-4">4. Your Rights</h2>
+                <p class="text-gray-600 mb-4">
+                  You have the right to:
+                </p>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                  <li>Access your stored personal data</li>
+                  <li>Request correction of inaccurate data</li>
+                  <li>Request deletion of your data</li>
+                  <li>Request restriction of processing</li>
+                  <li>Object to processing</li>
+                  <li>Receive your data in a portable format</li>
+                </ul>
+              </section>
+
+              <section>
+                <h2 class="text-xl font-semibold text-gray-900 mb-4">5. Changes</h2>
+                <p class="text-gray-600">
+                  We reserve the right to modify this privacy policy as necessary to adapt it to changed legal situations or changes to our services.
+                </p>
+              </section>
+            </>
+          )}
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
