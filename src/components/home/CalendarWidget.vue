@@ -1,9 +1,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import { getTranslations, getLocalizedValue, type Locale } from '../../i18n';
-import availability from '../../data/availability.json';
-import servicesOwner1 from '../../data/services-owner1.json';
-import servicesOwner2 from '../../data/services-owner2.json';
+import { getAllSpecialists, getBookingSettings, getHolidays } from '../../utils/specialists';
 
 const props = defineProps<{
   locale: Locale;
@@ -11,32 +9,30 @@ const props = defineProps<{
 
 const t = getTranslations(props.locale);
 
-const selectedOwner = ref<'owner1' | 'owner2'>('owner1');
+const specialists = getAllSpecialists();
+const bookingSettings = getBookingSettings();
+const holidays = getHolidays();
+
+const selectedOwner = ref<'massage-wellness' | 'nail-art'>('massage-wellness');
 const selectedDate = ref<string>('');
 
-const owners = [
-  {
-    id: 'owner1' as const,
-    name: getLocalizedValue(servicesOwner1.owner.name, props.locale),
-    whatsapp: servicesOwner1.owner.contact.whatsapp,
-  },
-  {
-    id: 'owner2' as const,
-    name: getLocalizedValue(servicesOwner2.owner.name, props.locale),
-    whatsapp: servicesOwner2.owner.contact.whatsapp,
-  },
-];
+const owners = specialists.map((specialist) => ({
+  id: specialist.id as 'massage-wellness' | 'nail-art',
+  name: getLocalizedValue(specialist.name, props.locale),
+  whatsapp: specialist.contact.whatsapp,
+  availability: specialist.availability,
+}));
 
 const today = new Date();
 const minDate = computed(() => {
   const date = new Date(today);
-  date.setHours(date.getHours() + availability.bookingSettings.minAdvanceHours);
+  date.setHours(date.getHours() + bookingSettings.minAdvanceHours);
   return date.toISOString().split('T')[0];
 });
 
 const maxDate = computed(() => {
   const date = new Date(today);
-  date.setDate(date.getDate() + availability.bookingSettings.maxAdvanceDays);
+  date.setDate(date.getDate() + bookingSettings.maxAdvanceDays);
   return date.toISOString().split('T')[0];
 });
 
@@ -45,10 +41,12 @@ const dayNames = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'frida
 const getWorkingHoursForDate = (dateStr: string) => {
   const date = new Date(dateStr);
   const dayName = dayNames[date.getDay()];
-  const ownerAvailability = availability.owners[selectedOwner.value];
+  const owner = owners.find((o) => o.id === selectedOwner.value);
 
-  // Check for exceptions
-  const exception = availability.exceptions.find(
+  if (!owner) return null;
+
+  // Check for exceptions (holidays)
+  const exception = holidays.find(
     (e) => e.date === dateStr && (e.owner === 'all' || e.owner === selectedOwner.value)
   );
 
@@ -56,12 +54,9 @@ const getWorkingHoursForDate = (dateStr: string) => {
     if (exception.type === 'closed') {
       return null;
     }
-    if (exception.type === 'modified' && 'hours' in exception) {
-      return exception.hours;
-    }
   }
 
-  return ownerAvailability.defaultWorkingHours[dayName];
+  return owner.availability.defaultWorkingHours[dayName];
 };
 
 const selectedDateHours = computed(() => {
@@ -120,7 +115,7 @@ const whatsappUrl = computed(() => {
                 class="p-4 rounded-xl border-2 transition-all text-left"
                 :class="
                   selectedOwner === owner.id
-                    ? owner.id === 'owner1'
+                    ? owner.id === 'massage-wellness'
                       ? 'border-amber-500 bg-amber-50'
                       : 'border-purple-500 bg-purple-50'
                     : 'border-gray-200 bg-white hover:border-gray-300'
@@ -184,7 +179,7 @@ const whatsappUrl = computed(() => {
             rel="noopener noreferrer"
             class="w-full inline-flex items-center justify-center gap-2 px-6 py-4 text-white rounded-xl font-medium transition-all hover:scale-[1.02]"
             :class="
-              selectedOwner === 'owner1'
+              selectedOwner === 'massage-wellness'
                 ? 'bg-amber-500 hover:bg-amber-600'
                 : 'bg-purple-500 hover:bg-purple-600'
             "

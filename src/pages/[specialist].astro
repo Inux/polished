@@ -1,0 +1,59 @@
+---
+import SpecialistLayout from '../layouts/SpecialistLayout.astro';
+import HeroSection from '../components/specialist/HeroSection.astro';
+import CategoriesSection from '../components/specialist/CategoriesSection.astro';
+import ServicesSection from '../components/specialist/ServicesSection.astro';
+import GallerySection from '../components/specialist/GallerySection.astro';
+import CTASection from '../components/specialist/CTASection.astro';
+import PortfolioCarousel from '../components/nail-art/PortfolioCarousel.vue';
+import { getLocalizedValue, defaultLocale, type Locale } from '../i18n';
+import { getAllSpecialists } from '../utils/specialists';
+
+export async function getStaticPaths() {
+  const specialists = getAllSpecialists();
+  return specialists.map((specialist) => ({
+    params: { specialist: specialist.slug },
+    props: { specialist },
+  }));
+}
+
+const { specialist } = Astro.props;
+const locale: Locale = defaultLocale;
+
+const title = getLocalizedValue(specialist.name, locale);
+const description = getLocalizedValue(specialist.bio, locale);
+
+// Check if specialist has a portfolio (gallery with tags)
+const portfolioItems = specialist.gallery?.filter(
+  (item): item is typeof item & { tags: string[] } => 
+    Array.isArray(item.tags) && item.tags.length > 0
+) ?? [];
+const hasPortfolio = portfolioItems.length > 0;
+const portfolioTitle = specialist.translations.portfolioTitle
+  ? getLocalizedValue(specialist.translations.portfolioTitle, locale)
+  : null;
+---
+
+<SpecialistLayout specialist={specialist} title={title} description={description} locale={locale}>
+  <HeroSection specialist={specialist} locale={locale} />
+
+  {/* Portfolio section (for specialists with tagged gallery items) */}
+  {hasPortfolio && portfolioTitle && (
+    <section class="py-16" style="background: var(--color-bg-secondary);">
+      <div class="container mx-auto px-4">
+        <h2 class="section-title text-3xl font-display font-bold text-center mb-12">
+          {portfolioTitle}
+        </h2>
+        <PortfolioCarousel client:visible portfolio={portfolioItems} locale={locale} />
+      </div>
+    </section>
+  )}
+
+  <CategoriesSection specialist={specialist} locale={locale} />
+  <ServicesSection specialist={specialist} locale={locale} />
+
+  {/* Gallery section (for specialists without tagged gallery - uses galleryTitle) */}
+  <GallerySection specialist={specialist} locale={locale} />
+
+  <CTASection specialist={specialist} locale={locale} />
+</SpecialistLayout>

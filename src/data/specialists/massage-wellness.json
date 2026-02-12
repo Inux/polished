@@ -1,27 +1,95 @@
 {
-  "owner": {
-    "id": "owner1",
-    "name": {
+  "id": "massage-wellness",
+  "slug": "massage-wellness",
+  "name": {
+    "de": "Massage & Wellness",
+    "fr": "Massage & Bien-etre",
+    "en": "Massage & Wellness"
+  },
+  "title": {
+    "de": "Massage & Wellness Spezialistin",
+    "fr": "Specialiste Massage & Bien-etre",
+    "en": "Massage & Wellness Specialist"
+  },
+  "bio": {
+    "de": "Mit jahrelanger Erfahrung in therapeutischen und Wellness-Behandlungen biete ich Ihnen eine Oase der Ruhe und Erholung.",
+    "fr": "Avec des annees d'experience dans les traitements therapeutiques et de bien-etre, je vous offre une oasis de calme et de detente.",
+    "en": "With years of experience in therapeutic and wellness treatments, I offer you an oasis of calm and relaxation."
+  },
+  "avatar": "/images/massage-wellness/avatar.jpg",
+  "contact": {
+    "whatsapp": "+41791234567",
+    "email": "wellness@beauty-wellness-oase.ch"
+  },
+  "theme": {
+    "id": "spiritual",
+    "cssVariables": {
+      "--color-primary-50": "#fefce8",
+      "--color-primary-100": "#fef9c3",
+      "--color-primary-200": "#fef08a",
+      "--color-primary-300": "#fde047",
+      "--color-primary-400": "#facc15",
+      "--color-primary-500": "#d4a853",
+      "--color-primary-600": "#b8860b",
+      "--color-primary-700": "#92690a",
+      "--color-primary-800": "#6b4e09",
+      "--color-primary-900": "#422f05",
+      "--color-accent-500": "#8fbc8f",
+      "--color-accent-600": "#6b8e6b",
+      "--color-bg-primary": "#faf8f5",
+      "--color-bg-secondary": "#f5f0e8",
+      "--color-bg-accent": "#ebe5d9",
+      "--color-text-primary": "#3d3424",
+      "--color-text-secondary": "#6b5c4a",
+      "--color-text-muted": "#9a8b78",
+      "--color-border": "#d4c5a9",
+      "--gradient-hero": "linear-gradient(135deg, #faf8f5 0%, #f5f0e8 50%, #ebe5d9 100%)",
+      "--gradient-gold": "linear-gradient(135deg, #d4a853 0%, #b8860b 100%)",
+      "--font-display": "'Cormorant Garamond', serif"
+    }
+  },
+  "availability": {
+    "defaultWorkingHours": {
+      "monday": { "start": "09:00", "end": "18:00" },
+      "tuesday": { "start": "09:00", "end": "18:00" },
+      "wednesday": { "start": "09:00", "end": "18:00" },
+      "thursday": { "start": "09:00", "end": "20:00" },
+      "friday": { "start": "09:00", "end": "18:00" },
+      "saturday": { "start": "10:00", "end": "16:00" },
+      "sunday": null
+    },
+    "breaks": [{ "start": "12:00", "end": "13:00" }]
+  },
+  "translations": {
+    "heroTitle": {
       "de": "Massage & Wellness",
       "fr": "Massage & Bien-etre",
       "en": "Massage & Wellness"
     },
-    "slug": "massage-wellness",
-    "title": {
-      "de": "Massage & Wellness Spezialistin",
-      "fr": "Specialiste Massage & Bien-etre",
-      "en": "Massage & Wellness Specialist"
+    "heroSubtitle": {
+      "de": "Finden Sie Ihre innere Ruhe",
+      "fr": "Trouvez votre paix interieure",
+      "en": "Find Your Inner Peace"
     },
-    "bio": {
-      "de": "Mit jahrelanger Erfahrung in therapeutischen und Wellness-Behandlungen biete ich Ihnen eine Oase der Ruhe und Erholung.",
-      "fr": "Avec des annees d'experience dans les traitements therapeutiques et de bien-etre, je vous offre une oasis de calme et de detente.",
-      "en": "With years of experience in therapeutic and wellness treatments, I offer you an oasis of calm and relaxation."
+    "categoriesTitle": {
+      "de": "Kategorien",
+      "fr": "Categories",
+      "en": "Categories"
     },
-    "avatar": "/images/massage-wellness/avatar.jpg",
-    "theme": "spiritual",
-    "contact": {
-      "whatsapp": "+41791234567",
-      "email": "wellness@beauty-wellness-oase.ch"
+    "galleryTitle": {
+      "de": "Galerie",
+      "fr": "Galerie",
+      "en": "Gallery"
+    },
+    "ctaTitle": {
+      "de": "Sitzung buchen",
+      "fr": "Reserver une seance",
+      "en": "Book a Session"
+    },
+    "bookLabel": {
+      "de": "Sitzung buchen",
+      "fr": "Reserver une seance",
+      "en": "Book a Session"
     }
   },
   "categories": [

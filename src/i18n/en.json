@@ -80,26 +80,45 @@
     "privacyTitle": "Privacy Policy",
     "companyInfo": "Company Information",
     "contactInfo": "Contact Information",
-    "dataProtection": "Data Protection",
-    "dataCollection": "Data Collection",
-    "cookies": "Cookies",
-    "rights": "Your Rights",
-    "changes": "Changes"
-  },
-  "owner1": {
-    "heroTitle": "Massage & Wellness",
-    "heroSubtitle": "Find Your Inner Peace",
-    "categories": "Categories",
-    "gallery": "Gallery",
-    "bookSession": "Book a Session"
-  },
-  "owner2": {
-    "heroTitle": "Nail Art",
-    "heroSubtitle": "Where Creativity Meets Beauty",
-    "portfolio": "Portfolio",
-    "categories": "Categories",
-    "comingSoon": "Coming Soon",
-    "bookAppointment": "Book Appointment"
+    "lastUpdated": "Last updated",
+    "disclaimer": "Disclaimer",
+    "copyright": "Copyright",
+    "privacy": {
+      "dataController": "1. Data Controller",
+      "dataControllerText": "The party responsible for data processing on this website is:",
+      "dataCollection": "2. Data Collection and Processing",
+      "dataCollectionText": "We only collect and process personal data to the extent necessary to provide a functional website and our content and services.",
+      "contactTitle": "2.1 Contact",
+      "contactText": "When you contact us via email, WhatsApp, or phone, the data you provide will be stored to answer your questions and schedule appointments.",
+      "whatsappTitle": "2.2 WhatsApp",
+      "whatsappText": "We use WhatsApp to communicate with our customers. When using WhatsApp, WhatsApp's (Meta) privacy policy applies. We recommend familiarizing yourself with WhatsApp's privacy practices.",
+      "cookiesTitle": "3. Cookies",
+      "cookiesText": "Our website uses cookies. Cookies are small text files stored on your device that enable analysis of website usage.",
+      "necessaryCookies": "3.1 Necessary Cookies",
+      "necessaryCookiesText": "These cookies are required for website operation and cannot be disabled.",
+      "analyticsCookies": "3.2 Analytics Cookies",
+      "analyticsCookiesText": "With your consent, we use analytics cookies to understand how visitors interact with our website.",
+      "marketingCookies": "3.3 Marketing Cookies",
+      "marketingCookiesText": "With your consent, we use marketing cookies for personalized advertising.",
+      "yourRights": "4. Your Rights",
+      "yourRightsText": "You have the right to:",
+      "rightsList": [
+        "Access your stored personal data",
+        "Request correction of inaccurate data",
+        "Request deletion of your data",
+        "Request restriction of processing",
+        "Object to processing",
+        "Receive your data in a portable format"
+      ],
+      "changes": "5. Changes",
+      "changesText": "We reserve the right to modify this privacy policy as necessary to adapt it to changed legal situations or changes to our services."
+    },
+    "impressum": {
+      "disclaimerText1": "The author assumes no liability for the correctness, accuracy, timeliness, reliability, or completeness of the information.",
+      "disclaimerText2": "Liability claims against the author for material or immaterial damages resulting from access to, use or non-use of the published information, misuse of the connection, or technical malfunctions are excluded.",
+      "disclaimerText3": "All offers are non-binding. The author expressly reserves the right to change, supplement, or delete parts of the pages or the entire offer without prior notice, or to cease publication temporarily or permanently.",
+      "copyrightText": "The copyright and all other rights to content, images, photos, or other files on the website belong exclusively to {companyName} or the specifically named rights holders. For the reproduction of any elements, the written consent of the copyright holders must be obtained in advance."
+    }
   },
   "common": {
     "loading": "Loading...",
@@ -109,6 +128,7 @@
     "next": "Next",
     "previous": "Previous",
     "close": "Close",
-    "chf": "CHF"
+    "chf": "CHF",
+    "all": "All"
   }
 }

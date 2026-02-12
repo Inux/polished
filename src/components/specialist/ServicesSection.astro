@@ -1,0 +1,31 @@
+---
+import { getTranslations, type Locale } from '../../i18n';
+import type { Specialist } from '../../types/specialist';
+import ServiceCard from './ServiceCard.astro';
+
+interface Props {
+  specialist: Specialist;
+  locale: Locale;
+}
+
+const { specialist, locale } = Astro.props;
+const t = getTranslations(locale);
+---
+
+<section class="py-16" style="background: var(--color-bg-primary);">
+  <div class="container mx-auto px-4">
+    <h2 class="section-title text-3xl font-display font-bold text-center mb-12">
+      {t.services.title}
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      {specialist.services.map((service) => (
+        <ServiceCard
+          service={service}
+          specialist={specialist}
+          locale={locale}
+          translations={t}
+        />
+      ))}
+    </div>
+  </div>
+</section>

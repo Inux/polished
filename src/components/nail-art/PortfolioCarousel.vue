@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
-import { getLocalizedValue, type Locale } from '../../i18n';
+import { getLocalizedValue, getTranslations, type Locale } from '../../i18n';
+import type { LocalizedString } from '../../types/specialist';
 
 interface PortfolioItem {
   src: string;
-  alt: Record<string, string> | string;
+  alt: LocalizedString | string;
   tags: string[];
 }
 
@@ -15,6 +16,8 @@ const props = defineProps<{
 
 const selectedTag = ref<string | null>(null);
 const currentIndex = ref(0);
+
+const t = computed(() => getTranslations(props.locale));
 
 const allTags = computed(() => {
   const tags = new Set<string>();
@@ -58,7 +61,7 @@ const prevSlide = () => {
             : 'bg-purple-100 text-purple-700 hover:bg-purple-200'
         "
       >
-        All
+        {{ t.common.all }}
       </button>
       <button
         v-for="tag in allTags"

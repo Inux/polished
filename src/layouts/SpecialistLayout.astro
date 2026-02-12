@@ -1,0 +1,26 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import '../styles/themes/massage-wellness.css';
+import '../styles/themes/nail-art.css';
+import type { Locale } from '../i18n';
+import type { Specialist } from '../types/specialist';
+import { generateThemeStyles } from '../utils/specialists';
+
+interface Props {
+  specialist: Specialist;
+  title?: string;
+  description?: string;
+  locale?: Locale;
+}
+
+const { specialist, title, description, locale } = Astro.props;
+
+const themeClass = `theme-${specialist.id}`;
+const themeStyles = generateThemeStyles(specialist);
+---
+
+<BaseLayout title={title} description={description} locale={locale}>
+  <div class={themeClass} style={themeStyles}>
+    <slot />
+  </div>
+</BaseLayout>

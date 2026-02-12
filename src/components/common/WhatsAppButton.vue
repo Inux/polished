@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
+import { getTranslations, type Locale } from '../../i18n';
 
 const props = defineProps<{
   phone: string;
@@ -7,15 +8,18 @@ const props = defineProps<{
   service?: string;
   floating?: boolean;
   label?: string;
+  locale: Locale;
 }>();
+
+const t = computed(() => getTranslations(props.locale));
 
 const whatsappUrl = computed(() => {
   const baseUrl = 'https://wa.me/';
   const phone = props.phone.replace(/[^0-9]/g, '');
-  let text = props.message || 'Hello! I would like to book an appointment.';
+  let text = props.message || t.value.whatsapp.greeting;
 
   if (props.service) {
-    text = `Hello! I'm interested in booking: ${props.service}`;
+    text = t.value.whatsapp.greetingWithService.replace('{service}', props.service);
   }
 
   return `${baseUrl}${phone}?text=${encodeURIComponent(text)}`;
@@ -34,7 +38,7 @@ const whatsappUrl = computed(() => {
         : 'btn-whatsapp',
     ]"
     :style="floating ? { backgroundColor: '#25D366' } : {}"
-    :aria-label="label || 'Contact us on WhatsApp'"
+    :aria-label="label || t.whatsapp.bookAppointment"
   >
     <svg
       class="w-6 h-6"
