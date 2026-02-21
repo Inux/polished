@@ -21,7 +21,12 @@
     "duration": "Duree",
     "minutes": "min.",
     "bookNow": "Reserver",
-    "featured": "Populaire"
+    "featured": "Populaire",
+    "from": "dès",
+    "extras": "Extras",
+    "total": "Total",
+    "selectDuration": "Choisir la durée",
+    "selectExtras": "Choisir les extras"
   },
   "testimonials": {
     "title": "Ce que disent nos clients",

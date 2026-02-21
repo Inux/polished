@@ -21,7 +21,12 @@
     "duration": "Duration",
     "minutes": "min.",
     "bookNow": "Book now",
-    "featured": "Popular"
+    "featured": "Popular",
+    "from": "from",
+    "extras": "Extras",
+    "total": "Total",
+    "selectDuration": "Select duration",
+    "selectExtras": "Select extras"
   },
   "testimonials": {
     "title": "What Our Clients Say",

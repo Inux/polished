@@ -29,16 +29,39 @@ export interface Availability {
   breaks: TimeSlot[];
 }
 
+// Duration variant with its own price
+export interface ServiceVariant {
+  duration: number; // minutes
+  price: number;
+  label?: LocalizedString; // optional label like "Quick" or "Extended"
+}
+
+// Extra/add-on option
+export interface ServiceExtra {
+  id: string;
+  name: LocalizedString;
+  price: number; // additional cost
+  description?: LocalizedString;
+}
+
 export interface Service {
   id: string;
   name: LocalizedString;
   description: LocalizedString;
-  duration: number;
-  price: number;
   currency: string;
   category: string;
   image?: string;
   featured: boolean;
+
+  // Support for variants (multiple durations/prices)
+  variants: ServiceVariant[];
+
+  // Optional extras/add-ons
+  extras?: ServiceExtra[];
+
+  // Deprecated: kept for backwards compatibility
+  duration?: number;
+  price?: number;
 }
 
 export interface Category {

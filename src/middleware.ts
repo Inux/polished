@@ -19,6 +19,7 @@ export const onRequest = defineMiddleware(async (context, next) => {
     "font-src 'self' https://fonts.gstatic.com",
     "img-src 'self' data: https:",
     "connect-src 'self'",
+    "frame-src https://www.google.com",
     "frame-ancestors 'none'",
     "base-uri 'self'",
     "form-action 'self'",

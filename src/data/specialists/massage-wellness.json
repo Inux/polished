@@ -149,8 +149,23 @@
         "fr": "Massage des tissus profonds pour la recuperation musculaire et l'amelioration des performances.",
         "en": "Deep tissue massage targeting muscle recovery and athletic performance."
       },
-      "duration": 60,
-      "price": 120,
+      "variants": [
+        { "duration": 30, "price": 65 },
+        { "duration": 45, "price": 90 },
+        { "duration": 60, "price": 120 }
+      ],
+      "extras": [
+        {
+          "id": "special-oil",
+          "name": { "de": "Spezialöl", "fr": "Huile spéciale", "en": "Special Oil" },
+          "price": 15
+        },
+        {
+          "id": "hot-towel",
+          "name": { "de": "Heisse Tücher", "fr": "Serviettes chaudes", "en": "Hot Towels" },
+          "price": 10
+        }
+      ],
       "currency": "CHF",
       "category": "massage",
       "image": "/images/massage-wellness/sport-massage.jpg",
@@ -168,8 +183,22 @@
         "fr": "Massage corporel relaxant pour soulager le stress et rajeunir.",
         "en": "Relaxing full-body massage for stress relief and rejuvenation."
       },
-      "duration": 90,
-      "price": 150,
+      "variants": [
+        { "duration": 60, "price": 110 },
+        { "duration": 90, "price": 150 }
+      ],
+      "extras": [
+        {
+          "id": "aroma-oil",
+          "name": { "de": "Aromaöl", "fr": "Huile aromatique", "en": "Aroma Oil" },
+          "price": 10
+        },
+        {
+          "id": "hot-towel",
+          "name": { "de": "Heisse Tücher", "fr": "Serviettes chaudes", "en": "Hot Towels" },
+          "price": 10
+        }
+      ],
       "currency": "CHF",
       "category": "massage",
       "image": "/images/massage-wellness/wellness-massage.jpg",
@@ -187,8 +216,10 @@
         "fr": "Massage relaxant aux pierres de basalte chaudes pour une relaxation musculaire profonde.",
         "en": "Relaxing massage with warm basalt stones for deep muscle relaxation."
       },
-      "duration": 75,
-      "price": 140,
+      "variants": [
+        { "duration": 60, "price": 120 },
+        { "duration": 75, "price": 140 }
+      ],
       "currency": "CHF",
       "category": "massage",
       "image": "/images/massage-wellness/hot-stone.jpg",
@@ -206,8 +237,9 @@
         "fr": "Epilation complete du corps avec cire premium.",
         "en": "Complete body hair removal with premium wax."
       },
-      "duration": 120,
-      "price": 200,
+      "variants": [
+        { "duration": 120, "price": 200 }
+      ],
       "currency": "CHF",
       "category": "waxing",
       "image": "/images/massage-wellness/waxing.jpg",
@@ -225,8 +257,9 @@
         "fr": "Epilation professionnelle des jambes pour une peau lisse.",
         "en": "Professional leg hair removal for smooth skin."
       },
-      "duration": 45,
-      "price": 60,
+      "variants": [
+        { "duration": 45, "price": 60 }
+      ],
       "currency": "CHF",
       "category": "waxing",
       "image": "/images/massage-wellness/leg-waxing.jpg",
@@ -244,8 +277,10 @@
         "fr": "Soin du visage personnalise pour une peau eclatante et saine.",
         "en": "Customized facial treatment for radiant, healthy skin."
       },
-      "duration": 75,
-      "price": 130,
+      "variants": [
+        { "duration": 60, "price": 100 },
+        { "duration": 75, "price": 130 }
+      ],
       "currency": "CHF",
       "category": "cosmetics",
       "image": "/images/massage-wellness/facial.jpg",
@@ -263,8 +298,10 @@
         "fr": "Traitement intensif pour le rajeunissement de la peau et la reduction des rides.",
         "en": "Intensive treatment for skin rejuvenation and wrinkle reduction."
       },
-      "duration": 90,
-      "price": 180,
+      "variants": [
+        { "duration": 60, "price": 140 },
+        { "duration": 90, "price": 180 }
+      ],
       "currency": "CHF",
       "category": "cosmetics",
       "image": "/images/massage-wellness/anti-aging.jpg",

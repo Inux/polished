@@ -172,8 +172,16 @@
         "fr": "Soins professionnels des ongles avec vernis au choix.",
         "en": "Professional nail care with polish of your choice."
       },
-      "duration": 45,
-      "price": 45,
+      "variants": [
+        { "duration": 45, "price": 45 }
+      ],
+      "extras": [
+        {
+          "id": "french",
+          "name": { "de": "French", "fr": "French", "en": "French" },
+          "price": 10
+        }
+      ],
       "currency": "CHF",
       "category": "manicure",
       "image": "/images/nail-art/classic-manicure.jpg",
@@ -191,8 +199,31 @@
         "fr": "Application de vernis gel longue tenue avec soins professionnels des ongles.",
         "en": "Long-lasting gel polish application with nail care."
       },
-      "duration": 60,
-      "price": 65,
+      "variants": [
+        { "duration": 60, "price": 65 }
+      ],
+      "extras": [
+        {
+          "id": "french",
+          "name": { "de": "French", "fr": "French", "en": "French" },
+          "price": 10
+        },
+        {
+          "id": "chrome",
+          "name": { "de": "Chrome", "fr": "Chrome", "en": "Chrome" },
+          "price": 15
+        },
+        {
+          "id": "cateye",
+          "name": { "de": "Cat Eye", "fr": "Cat Eye", "en": "Cat Eye" },
+          "price": 15
+        },
+        {
+          "id": "glitter",
+          "name": { "de": "Glitzer", "fr": "Paillettes", "en": "Glitter" },
+          "price": 10
+        }
+      ],
       "currency": "CHF",
       "category": "manicure",
       "image": "/images/nail-art/gel-manicure.jpg",
@@ -210,8 +241,22 @@
         "fr": "Nail art peint a la main personnalise - designs uniques pour chaque client.",
         "en": "Custom hand-painted nail art - unique designs for every client."
       },
-      "duration": 120,
-      "price": 150,
+      "variants": [
+        { "duration": 90, "price": 120 },
+        { "duration": 120, "price": 150 }
+      ],
+      "extras": [
+        {
+          "id": "3d-elements",
+          "name": { "de": "3D Elemente", "fr": "Éléments 3D", "en": "3D Elements" },
+          "price": 20
+        },
+        {
+          "id": "gems",
+          "name": { "de": "Strasssteine", "fr": "Strass", "en": "Gems" },
+          "price": 15
+        }
+      ],
       "currency": "CHF",
       "category": "nail-art",
       "image": "/images/nail-art/artistic-nails.jpg",
@@ -229,8 +274,9 @@
         "fr": "Look french classique avec une touche moderne.",
         "en": "Classic French look with a modern twist."
       },
-      "duration": 75,
-      "price": 85,
+      "variants": [
+        { "duration": 75, "price": 85 }
+      ],
       "currency": "CHF",
       "category": "nail-art",
       "image": "/images/nail-art/french-nails.jpg",
@@ -248,8 +294,27 @@
         "fr": "Extensions d'ongles en acrylique professionnelles avec design au choix.",
         "en": "Professional acrylic nail extensions with your choice of design."
       },
-      "duration": 90,
-      "price": 120,
+      "variants": [
+        { "duration": 90, "price": 120 },
+        { "duration": 120, "price": 150 }
+      ],
+      "extras": [
+        {
+          "id": "french",
+          "name": { "de": "French", "fr": "French", "en": "French" },
+          "price": 10
+        },
+        {
+          "id": "chrome",
+          "name": { "de": "Chrome", "fr": "Chrome", "en": "Chrome" },
+          "price": 15
+        },
+        {
+          "id": "cateye",
+          "name": { "de": "Cat Eye", "fr": "Cat Eye", "en": "Cat Eye" },
+          "price": 15
+        }
+      ],
       "currency": "CHF",
       "category": "extensions",
       "image": "/images/nail-art/acrylic.jpg",
@@ -267,8 +332,27 @@
         "fr": "Extensions d'ongles en gel pour un look naturel et durable.",
         "en": "Gel nail extensions for natural look and durability."
       },
-      "duration": 90,
-      "price": 110,
+      "variants": [
+        { "duration": 90, "price": 110 },
+        { "duration": 120, "price": 140 }
+      ],
+      "extras": [
+        {
+          "id": "french",
+          "name": { "de": "French", "fr": "French", "en": "French" },
+          "price": 10
+        },
+        {
+          "id": "chrome",
+          "name": { "de": "Chrome", "fr": "Chrome", "en": "Chrome" },
+          "price": 15
+        },
+        {
+          "id": "cateye",
+          "name": { "de": "Cat Eye", "fr": "Cat Eye", "en": "Cat Eye" },
+          "price": 15
+        }
+      ],
       "currency": "CHF",
       "category": "extensions",
       "image": "/images/nail-art/gel-extensions.jpg",
@@ -286,8 +370,9 @@
         "fr": "Reparation des ongles endommages ou casses.",
         "en": "Repair of damaged or broken nails."
       },
-      "duration": 30,
-      "price": 25,
+      "variants": [
+        { "duration": 30, "price": 25 }
+      ],
       "currency": "CHF",
       "category": "manicure",
       "image": "/images/nail-art/repair.jpg",

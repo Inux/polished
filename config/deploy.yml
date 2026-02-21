@@ -1,0 +1,70 @@
+# Kamal deployment configuration for Polished Beauty Studio
+# Documentation: https://kamal-deploy.org/
+
+service: polished
+
+# Docker image configuration
+image: your-registry/polished
+
+# Deploy to these servers
+servers:
+  web:
+    hosts:
+      - YOUR_HETZNER_IP
+    labels:
+      traefik.http.routers.polished.rule: Host(`your-domain.com`) || Host(`www.your-domain.com`)
+      traefik.http.routers.polished.entrypoints: websecure
+      traefik.http.routers.polished.tls.certresolver: letsencrypt
+      # Redirect www to non-www
+      traefik.http.middlewares.polished-redirect.redirectregex.regex: ^https://www\.(.*)
+      traefik.http.middlewares.polished-redirect.redirectregex.replacement: https://$${1}
+      traefik.http.routers.polished.middlewares: polished-redirect
+
+# Container registry
+registry:
+  server: ghcr.io
+  username:
+    - KAMAL_REGISTRY_USERNAME
+  password:
+    - KAMAL_REGISTRY_PASSWORD
+
+# Environment variables (non-secret)
+env:
+  clear:
+    NODE_ENV: production
+
+# Health check configuration
+healthcheck:
+  path: /health
+  port: 80
+  max_attempts: 10
+  interval: 20s
+
+# Traefik configuration for SSL/TLS
+traefik:
+  options:
+    publish:
+      - "443:443"
+      - "80:80"
+    volume:
+      - "/letsencrypt:/letsencrypt"
+  args:
+    entryPoints.web.address: ":80"
+    entryPoints.websecure.address: ":443"
+    entryPoints.web.http.redirections.entryPoint.to: websecure
+    entryPoints.web.http.redirections.entryPoint.scheme: https
+    certificatesResolvers.letsencrypt.acme.email: your-email@example.com
+    certificatesResolvers.letsencrypt.acme.storage: /letsencrypt/acme.json
+    certificatesResolvers.letsencrypt.acme.httpchallenge: true
+    certificatesResolvers.letsencrypt.acme.httpchallenge.entrypoint: web
+
+# SSH configuration
+ssh:
+  user: root
+
+# Builder configuration for multi-arch support
+builder:
+  multiarch: false
+  cache:
+    type: gha
+    options: mode=max
