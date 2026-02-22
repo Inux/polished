@@ -1,5 +1,7 @@
-/* Owner 2 Theme: Nail Art - Arty, Creative, Bold */
-.theme-owner2 {
+/* Nail Art Theme - Arty, Creative, Bold */
+@import './base.css';
+
+.theme-nail-art {
   /* Primary palette - vibrant purples and pinks */
   --color-primary-50: #fdf4ff;
   --color-primary-100: #fae8ff;
@@ -41,13 +43,13 @@
 }
 
 /* Hero section */
-.theme-owner2 .hero {
+.theme-nail-art .hero {
   background: var(--gradient-hero);
   position: relative;
   overflow: hidden;
 }
 
-.theme-owner2 .hero::before {
+.theme-nail-art .hero::before {
   content: '';
   position: absolute;
   top: -50%;
@@ -58,7 +60,7 @@
   pointer-events: none;
 }
 
-.theme-owner2 .hero::after {
+.theme-nail-art .hero::after {
   content: '';
   position: absolute;
   bottom: -30%;
@@ -70,7 +72,7 @@
 }
 
 /* Service cards */
-.theme-owner2 .service-card {
+.theme-nail-art .service-card {
   background: white;
   border-radius: 1rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
@@ -79,7 +81,7 @@
   overflow: hidden;
 }
 
-.theme-owner2 .service-card::before {
+.theme-nail-art .service-card::before {
   content: '';
   position: absolute;
   top: 0;
@@ -91,17 +93,17 @@
   transition: opacity 300ms ease-in-out;
 }
 
-.theme-owner2 .service-card:hover {
+.theme-nail-art .service-card:hover {
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
   transform: translateY(-4px);
 }
 
-.theme-owner2 .service-card:hover::before {
+.theme-nail-art .service-card:hover::before {
   opacity: 1;
 }
 
 /* Primary button */
-.theme-owner2 .btn-primary {
+.theme-nail-art .btn-primary {
   background: var(--gradient-primary);
   color: white;
   border: none;
@@ -112,17 +114,17 @@
   box-shadow: 0 4px 14px 0 rgba(217, 70, 239, 0.3);
 }
 
-.theme-owner2 .btn-primary:hover {
+.theme-nail-art .btn-primary:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px 0 rgba(217, 70, 239, 0.4);
 }
 
 /* Section titles */
-.theme-owner2 .section-title {
+.theme-nail-art .section-title {
   color: var(--color-primary-600);
 }
 
-.theme-owner2 .section-title span {
+.theme-nail-art .section-title span {
   background: var(--gradient-artistic);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -130,13 +132,13 @@
 }
 
 /* Portfolio gallery */
-.theme-owner2 .portfolio-item {
+.theme-nail-art .portfolio-item {
   border-radius: 1rem;
   overflow: hidden;
   position: relative;
 }
 
-.theme-owner2 .portfolio-item::after {
+.theme-nail-art .portfolio-item::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -145,12 +147,12 @@
   transition: opacity 300ms ease-in-out;
 }
 
-.theme-owner2 .portfolio-item:hover::after {
+.theme-nail-art .portfolio-item:hover::after {
   opacity: 1;
 }
 
 /* Tags */
-.theme-owner2 .tag {
+.theme-nail-art .tag {
   background: var(--color-primary-100);
   color: var(--color-primary-700);
   padding: 0.25rem 0.75rem;
@@ -160,7 +162,7 @@
 }
 
 /* Coming soon badge */
-.theme-owner2 .badge-coming-soon {
+.theme-nail-art .badge-coming-soon {
   background: var(--gradient-artistic);
   color: white;
   padding: 0.25rem 0.75rem;

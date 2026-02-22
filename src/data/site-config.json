@@ -11,28 +11,28 @@
       "fr": "Studio de beaute premium offrant massage, soins bien-etre et nail art creatif en Suisse.",
       "en": "Premium beauty studio offering massage, wellness treatments, and creative nail art in Switzerland."
     },
-    "url": "https://beauty-wellness-oase.ch",
+    "url": "https://miriams-nagelkunst.ch",
     "logo": "/images/common/logo.svg",
     "favicon": "/favicon.svg"
   },
   "contact": {
     "address": {
-      "street": "Musterstrasse 123",
-      "city": "Zurich",
-      "postalCode": "8000",
-      "country": "Switzerland"
+      "street": "Wydenmatt 8",
+      "city": "Willisau",
+      "postalCode": "6130",
+      "country": "CH"
     },
-    "phone": "+41 44 123 45 67",
-    "email": "hello@beauty-wellness-oase.ch",
-    "whatsapp": "+41791234567"
+    "phone": "+41 76 424 71 14",
+    "email": "kontakt@miriams-nagelkunst.ch",
+    "whatsapp": "+41764247114"
   },
   "social": {
-    "instagram": "https://instagram.com/beautywellnessoase",
-    "facebook": "https://facebook.com/beautywellnessoase"
+    "instagram": "https://instagram.com/miriams_nagelkunst",
+    "facebook": "https://facebook.com/miriams_nagelkunst"
   },
   "legal": {
-    "companyName": "Beauty & Wellness Oase GmbH",
-    "uid": "CHE-123.456.789",
+    "companyName": "Beauty & Wellness Oase",
+    "uid": "",
     "vatRegistered": false
   },
   "seo": {
@@ -43,9 +43,9 @@
     },
     "titleTemplate": "%s | Beauty & Wellness Oase",
     "keywords": {
-      "de": ["beauty studio", "massage", "nail art", "wellness", "zurich", "schweiz"],
-      "fr": ["studio beaute", "massage", "nail art", "bien-etre", "zurich", "suisse"],
-      "en": ["beauty studio", "massage", "nail art", "wellness", "zurich", "switzerland"]
+      "de": ["beauty studio", "massage", "nail art", "wellness", "willisau", "schweiz"],
+      "fr": ["studio beaute", "massage", "nail art", "bien-etre", "willisau", "suisse"],
+      "en": ["beauty studio", "massage", "nail art", "wellness", "willisau", "switzerland"]
     },
     "ogImage": "/images/common/og-image.jpg"
   }

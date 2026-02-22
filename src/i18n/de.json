@@ -4,7 +4,7 @@
     "services": "Leistungen",
     "massageWellness": "Massage & Wellness",
     "nailArt": "Nail Art",
-    "about": "Uber uns",
+    "about": "Über uns",
     "contact": "Kontakt",
     "book": "Termin buchen"
   },
@@ -21,7 +21,12 @@
     "duration": "Dauer",
     "minutes": "Min.",
     "bookNow": "Jetzt buchen",
-    "featured": "Beliebt"
+    "featured": "Beliebt",
+    "from": "ab",
+    "extras": "Extras",
+    "total": "Gesamt",
+    "selectDuration": "Dauer wählen",
+    "selectExtras": "Extras wählen"
   },
   "testimonials": {
     "title": "Das sagen unsere Kunden",
@@ -35,7 +40,7 @@
     "selectTime": "Uhrzeit wahlen",
     "available": "Verfugbar",
     "unavailable": "Nicht verfugbar",
-    "bookViaWhatsApp": "Uber WhatsApp buchen",
+    "bookViaWhatsApp": "Über WhatsApp buchen",
     "closed": "Geschlossen"
   },
   "contact": {
@@ -73,42 +78,62 @@
   "whatsapp": {
     "bookAppointment": "Termin buchen",
     "greeting": "Hallo! Ich mochte einen Termin vereinbaren.",
-    "greetingWithService": "Hallo! Ich interessiere mich fur: {service}"
+    "greetingWithService": "Hallo! Ich interessiere mich für: {service}"
   },
   "legal": {
     "impressumTitle": "Impressum",
     "privacyTitle": "Datenschutzerklarung",
     "companyInfo": "Firmeninformationen",
     "contactInfo": "Kontaktinformationen",
-    "dataProtection": "Datenschutz",
-    "dataCollection": "Datenerhebung",
-    "cookies": "Cookies",
-    "rights": "Ihre Rechte",
-    "changes": "Anderungen"
-  },
-  "owner1": {
-    "heroTitle": "Massage & Wellness",
-    "heroSubtitle": "Finden Sie Ihre innere Ruhe",
-    "categories": "Kategorien",
-    "gallery": "Galerie",
-    "bookSession": "Sitzung buchen"
-  },
-  "owner2": {
-    "heroTitle": "Nail Art",
-    "heroSubtitle": "Wo Kreativitat auf Schonheit trifft",
-    "portfolio": "Portfolio",
-    "categories": "Kategorien",
-    "comingSoon": "Demnachst",
-    "bookAppointment": "Termin buchen"
+    "lastUpdated": "Letzte Aktualisierung",
+    "disclaimer": "Haftungsausschluss",
+    "copyright": "Urheberrecht",
+    "privacy": {
+      "dataController": "1. Verantwortliche Stelle",
+      "dataControllerText": "Verantwortlich fur die Datenverarbeitung auf dieser Website ist:",
+      "dataCollection": "2. Erhebung und Verarbeitung von Daten",
+      "dataCollectionText": "Wir erheben und verarbeiten personenbezogene Daten nur, soweit dies zur Bereitstellung einer funktionsfahigen Website sowie unserer Inhalte und Leistungen erforderlich ist.",
+      "contactTitle": "2.1 Kontaktaufnahme",
+      "contactText": "Wenn Sie uns per E-Mail, WhatsApp oder Telefon kontaktieren, werden die von Ihnen mitgeteilten Daten (Ihre E-Mail-Adresse, ggf. Ihr Name und Ihre Telefonnummer) von uns gespeichert, um Ihre Fragen zu beantworten und Termine zu vereinbaren.",
+      "whatsappTitle": "2.2 WhatsApp",
+      "whatsappText": "Wir nutzen WhatsApp fur die Kommunikation mit unseren Kunden. Bei der Nutzung von WhatsApp gelten die Datenschutzbestimmungen von WhatsApp (Meta). Wir empfehlen Ihnen, sich uber die Datenschutzpraktiken von WhatsApp zu informieren.",
+      "cookiesTitle": "3. Cookies",
+      "cookiesText": "Unsere Website verwendet Cookies. Cookies sind kleine Textdateien, die auf Ihrem Endgerat gespeichert werden. Sie ermoglichen eine Analyse der Benutzung der Website.",
+      "necessaryCookies": "3.1 Notwendige Cookies",
+      "necessaryCookiesText": "Diese Cookies sind fur den Betrieb der Website erforderlich und konnen nicht deaktiviert werden.",
+      "analyticsCookies": "3.2 Analyse-Cookies",
+      "analyticsCookiesText": "Mit Ihrer Zustimmung verwenden wir Analyse-Cookies, um zu verstehen, wie Besucher mit unserer Website interagieren.",
+      "marketingCookies": "3.3 Marketing-Cookies",
+      "marketingCookiesText": "Mit Ihrer Zustimmung verwenden wir Marketing-Cookies fur personalisierte Werbung.",
+      "yourRights": "4. Ihre Rechte",
+      "yourRightsText": "Sie haben das Recht:",
+      "rightsList": [
+        "Auskunft uber Ihre gespeicherten personenbezogenen Daten zu erhalten",
+        "Die Berichtigung unrichtiger Daten zu verlangen",
+        "Die Loschung Ihrer Daten zu verlangen",
+        "Die Einschrankung der Verarbeitung zu verlangen",
+        "Der Verarbeitung zu widersprechen",
+        "Ihre Daten in einem ubertragbaren Format zu erhalten"
+      ],
+      "changes": "5. Anderungen",
+      "changesText": "Wir behalten uns vor, diese Datenschutzerklarung bei Bedarf anzupassen, um sie an geanderte Rechtslagen oder bei Anderungen unserer Dienste anzupassen."
+    },
+    "impressum": {
+      "disclaimerText1": "Der Autor ubernimmt keinerlei Gewahr hinsichtlich der inhaltlichen Richtigkeit, Genauigkeit, Aktualitat, Zuverlassigkeit und Vollstandigkeit der Informationen.",
+      "disclaimerText2": "Haftungsanspruche gegen den Autor wegen Schaden materieller oder immaterieller Art, welche aus dem Zugriff oder der Nutzung bzw. Nichtnutzung der veroffentlichten Informationen, durch Missbrauch der Verbindung oder durch technische Storungen entstanden sind, werden ausgeschlossen.",
+      "disclaimerText3": "Alle Angebote sind unverbindlich. Der Autor behalt es sich ausdrucklich vor, Teile der Seiten oder das gesamte Angebot ohne gesonderte Ankundigung zu verandern, zu erganzen, zu loschen oder die Veroffentlichung zeitweise oder endgultig einzustellen.",
+      "copyrightText": "Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf der Website gehoren ausschliesslich {companyName} oder den speziell genannten Rechtsinhabern. Fur die Reproduktion jeglicher Elemente ist die schriftliche Zustimmung der Urheberrechtstrager im Voraus einzuholen."
+    }
   },
   "common": {
     "loading": "Laden...",
     "error": "Etwas ist schiefgelaufen",
     "tryAgain": "Erneut versuchen",
-    "back": "Zuruck",
+    "back": "Zurück",
     "next": "Weiter",
     "previous": "Vorherige",
-    "close": "Schliessen",
-    "chf": "CHF"
+    "close": "Schließen",
+    "chf": "CHF",
+    "all": "Alle"
   }
 }

@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+.astro/
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Kamal
+.kamal/secrets
+
+# Documentation (not needed in container)
+*.md
+!README.md
+
+# Test files
+*.test.*
+*.spec.*
+__tests__/
+
+# Misc
+.editorconfig
+.prettierrc
+.eslintrc*

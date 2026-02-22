@@ -105,6 +105,7 @@ const canonicalUrl = new URL(url.pathname, siteConfig.site.url);
       phone={siteConfig.contact.whatsapp}
       message={t.whatsapp.greeting}
       floating={true}
+      locale={locale}
     />
 
     <CookieConsent client:load locale={locale} />

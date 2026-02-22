@@ -1,0 +1,102 @@
+---
+import { getLocalizedValue, type Locale } from '../../i18n';
+import type { Service, Specialist } from '../../types/specialist';
+import { getServiceVariants, hasMultipleVariants } from '../../utils/specialists';
+
+interface Props {
+  service: Service;
+  specialist: Specialist;
+  locale: Locale;
+  translations: {
+    services: {
+      featured: string;
+      minutes: string;
+      bookNow: string;
+      extras?: string;
+      from?: string;
+    };
+    whatsapp: {
+      greetingWithService: string;
+    };
+  };
+}
+
+const { service, specialist, locale, translations: t } = Astro.props;
+const serviceName = getLocalizedValue(service.name, locale);
+const whatsappMessage = t.whatsapp.greetingWithService.replace('{service}', serviceName);
+const variants = getServiceVariants(service);
+const hasVariants = hasMultipleVariants(service);
+const extras = service.extras || [];
+---
+
+<div class="service-card p-6">
+  {service.featured && (
+    <span class="inline-block px-2 py-1 text-xs font-medium rounded-full mb-3" style="background: var(--color-primary-100); color: var(--color-primary-700);">
+      {t.services.featured}
+    </span>
+  )}
+  <h3 class="text-lg font-semibold mb-2" style="color: var(--color-text-primary);">
+    {serviceName}
+  </h3>
+  <p class="text-sm mb-4" style="color: var(--color-text-muted);">
+    {getLocalizedValue(service.description, locale)}
+  </p>
+
+  <!-- Variants Table -->
+  <div class="variants-table mb-4 p-3 rounded-lg" style="background: var(--color-bg-secondary);">
+    {hasVariants ? (
+      <div class="grid gap-2" style={`grid-template-columns: repeat(${Math.min(variants.length, 3)}, 1fr);`}>
+        {variants.map((variant) => (
+          <div class="text-center p-2 rounded" style="background: var(--color-bg-primary);">
+            <div class="text-xs font-medium mb-1" style="color: var(--color-text-muted);">
+              {variant.duration} {t.services.minutes}
+            </div>
+            <div class="text-sm font-bold" style="color: var(--color-primary-600);">
+              {service.currency} {variant.price}
+            </div>
+          </div>
+        ))}
+      </div>
+    ) : (
+      <div class="flex items-center justify-between">
+        <span class="text-sm" style="color: var(--color-text-muted);">
+          {variants[0]?.duration} {t.services.minutes}
+        </span>
+        <span class="text-lg font-bold" style="color: var(--color-primary-600);">
+          {service.currency} {variants[0]?.price}
+        </span>
+      </div>
+    )}
+  </div>
+
+  <!-- Extras -->
+  {extras.length > 0 && (
+    <div class="extras mb-4">
+      <span class="text-xs font-medium mr-2" style="color: var(--color-text-muted);">
+        {t.services.extras || 'Extras'}:
+      </span>
+      <div class="inline-flex flex-wrap gap-1 mt-1">
+        {extras.map((extra) => (
+          <span
+            class="inline-block px-2 py-0.5 text-xs rounded-full"
+            style="background: var(--color-primary-50); color: var(--color-primary-700);"
+          >
+            +{getLocalizedValue(extra.name, locale)} ({extra.price})
+          </span>
+        ))}
+      </div>
+    </div>
+  )}
+
+  <div class="flex items-center justify-end pt-4" style="border-top: 1px solid var(--color-border);">
+    <a
+      href={`https://wa.me/${specialist.contact.whatsapp.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(whatsappMessage)}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="text-sm font-medium transition-colors"
+      style="color: var(--color-primary-600);"
+    >
+      {t.services.bookNow} &rarr;
+    </a>
+  </div>
+</div>

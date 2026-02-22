@@ -1,0 +1,58 @@
+/* Base Theme Styles - Shared between all specialist themes */
+
+/* Hero section base */
+[class*="theme-"] .hero {
+  position: relative;
+}
+
+/* Service cards base */
+[class*="theme-"] .service-card {
+  background: white;
+  transition: all 300ms ease-in-out;
+  overflow: hidden;
+}
+
+[class*="theme-"] .service-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Primary button base */
+[class*="theme-"] .btn-primary {
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  transition: all 300ms ease-in-out;
+  color: white;
+}
+
+[class*="theme-"] .btn-primary:hover {
+  transform: translateY(-1px);
+}
+
+/* Section titles base */
+[class*="theme-"] .section-title {
+  color: var(--color-primary-600);
+}
+
+/* Category cards base */
+[class*="theme-"] .category-card {
+  background: var(--color-bg-secondary);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 300ms ease-in-out;
+}
+
+[class*="theme-"] .category-card:hover {
+  background: var(--color-bg-accent);
+}
+
+/* Tags base */
+[class*="theme-"] .tag {
+  background: var(--color-primary-100);
+  color: var(--color-primary-700);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}

@@ -1,0 +1,65 @@
+---
+import { getLocalizedValue, type Locale } from '../../i18n';
+import type { Specialist } from '../../types/specialist';
+
+interface Props {
+  specialist: Specialist;
+  locale: Locale;
+}
+
+const { specialist, locale } = Astro.props;
+
+const categories = specialist.categories;
+const title = getLocalizedValue(specialist.translations.categoriesTitle, locale);
+const comingSoonLabel = specialist.translations.comingSoon
+  ? getLocalizedValue(specialist.translations.comingSoon, locale)
+  : null;
+
+const getCategoryIcon = (iconId: string) => {
+  const icons: Record<string, string> = {
+    massage: 'M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z',
+    waxing: 'M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z',
+    cosmetics: 'M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z',
+    manicure: 'M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01',
+    'nail-art': 'M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42',
+    extensions: 'M13 10V3L4 14h7v7l9-11h-7z',
+    eyelash: 'M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z M15 12a3 3 0 11-6 0 3 3 0 016 0z',
+  };
+  return icons[iconId] || icons.massage;
+};
+
+const gridCols = categories.length === 4 ? 'md:grid-cols-4' : 'md:grid-cols-3';
+---
+
+<section class="py-16" style="background: var(--color-bg-secondary);">
+  <div class="container mx-auto px-4">
+    <h2 class="section-title text-3xl font-display font-bold text-center mb-12">
+      {title}
+    </h2>
+    <div class={`grid grid-cols-1 ${gridCols} gap-6 max-w-5xl mx-auto`}>
+      {categories.map((category) => (
+        <div class="category-card service-card p-6 text-center relative">
+          {category.comingSoon && comingSoonLabel && (
+            <span class="badge-coming-soon absolute top-4 right-4">
+              {comingSoonLabel}
+            </span>
+          )}
+          <div
+            class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center"
+            style="background: var(--gradient-primary, var(--gradient-gold));"
+          >
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={getCategoryIcon(category.icon)} />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2" style="color: var(--color-text-primary);">
+            {getLocalizedValue(category.name, locale)}
+          </h3>
+          <p class="text-sm" style="color: var(--color-text-muted);">
+            {getLocalizedValue(category.description, locale)}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

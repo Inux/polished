@@ -21,7 +21,12 @@
     "duration": "Duree",
     "minutes": "min.",
     "bookNow": "Reserver",
-    "featured": "Populaire"
+    "featured": "Populaire",
+    "from": "dès",
+    "extras": "Extras",
+    "total": "Total",
+    "selectDuration": "Choisir la durée",
+    "selectExtras": "Choisir les extras"
   },
   "testimonials": {
     "title": "Ce que disent nos clients",
@@ -80,26 +85,45 @@
     "privacyTitle": "Politique de confidentialite",
     "companyInfo": "Informations sur l'entreprise",
     "contactInfo": "Coordonnees",
-    "dataProtection": "Protection des donnees",
-    "dataCollection": "Collecte de donnees",
-    "cookies": "Cookies",
-    "rights": "Vos droits",
-    "changes": "Modifications"
-  },
-  "owner1": {
-    "heroTitle": "Massage & Bien-etre",
-    "heroSubtitle": "Trouvez votre paix interieure",
-    "categories": "Categories",
-    "gallery": "Galerie",
-    "bookSession": "Reserver une seance"
-  },
-  "owner2": {
-    "heroTitle": "Nail Art",
-    "heroSubtitle": "Ou la creativite rencontre la beaute",
-    "portfolio": "Portfolio",
-    "categories": "Categories",
-    "comingSoon": "Bientot disponible",
-    "bookAppointment": "Prendre rendez-vous"
+    "lastUpdated": "Derniere mise a jour",
+    "disclaimer": "Clause de non-responsabilite",
+    "copyright": "Droits d'auteur",
+    "privacy": {
+      "dataController": "1. Responsable",
+      "dataControllerText": "Le responsable du traitement des donnees sur ce site est:",
+      "dataCollection": "2. Collecte et traitement des donnees",
+      "dataCollectionText": "Nous ne collectons et ne traitons les donnees personnelles que dans la mesure ou cela est necessaire pour fournir un site web fonctionnel ainsi que nos contenus et services.",
+      "contactTitle": "2.1 Contact",
+      "contactText": "Lorsque vous nous contactez par e-mail, WhatsApp ou telephone, les donnees que vous nous communiquez sont stockees pour repondre a vos questions et prendre des rendez-vous.",
+      "whatsappTitle": "2.2 WhatsApp",
+      "whatsappText": "Nous utilisons WhatsApp pour communiquer avec nos clients. L'utilisation de WhatsApp est soumise a la politique de confidentialite de WhatsApp (Meta).",
+      "cookiesTitle": "3. Cookies",
+      "cookiesText": "Notre site web utilise des cookies. Les cookies sont de petits fichiers texte stockes sur votre appareil.",
+      "necessaryCookies": "3.1 Cookies necessaires",
+      "necessaryCookiesText": "Ces cookies sont necessaires au fonctionnement du site et ne peuvent pas etre desactives.",
+      "analyticsCookies": "3.2 Cookies analytiques",
+      "analyticsCookiesText": "Avec votre consentement, nous utilisons des cookies analytiques pour comprendre comment les visiteurs interagissent avec notre site.",
+      "marketingCookies": "3.3 Cookies marketing",
+      "marketingCookiesText": "Avec votre consentement, nous utilisons des cookies marketing pour la publicite personnalisee.",
+      "yourRights": "4. Vos droits",
+      "yourRightsText": "Vous avez le droit de:",
+      "rightsList": [
+        "Acceder a vos donnees personnelles stockees",
+        "Demander la rectification des donnees inexactes",
+        "Demander la suppression de vos donnees",
+        "Demander la limitation du traitement",
+        "Vous opposer au traitement",
+        "Recevoir vos donnees dans un format portable"
+      ],
+      "changes": "5. Modifications",
+      "changesText": "Nous nous reservons le droit de modifier cette politique de confidentialite si necessaire."
+    },
+    "impressum": {
+      "disclaimerText1": "L'auteur n'assume aucune responsabilite quant a l'exactitude, la precision, l'actualite, la fiabilite et l'exhaustivite des informations.",
+      "disclaimerText2": "Les reclamations en responsabilite contre l'auteur pour des dommages materiels ou immateriels resultant de l'acces ou de l'utilisation ou de la non-utilisation des informations publiees sont exclues.",
+      "disclaimerText3": "Toutes les offres sont sans engagement. L'auteur se reserve expressement le droit de modifier, completer ou supprimer des parties des pages ou l'ensemble de l'offre sans avis prealable.",
+      "copyrightText": "Les droits d'auteur et tous les autres droits sur le contenu, les images, les photos ou autres fichiers du site appartiennent exclusivement a {companyName} ou aux titulaires de droits specifiquement mentionnes."
+    }
   },
   "common": {
     "loading": "Chargement...",
@@ -109,6 +133,7 @@
     "next": "Suivant",
     "previous": "Precedent",
     "close": "Fermer",
-    "chf": "CHF"
+    "chf": "CHF",
+    "all": "Tout"
   }
 }

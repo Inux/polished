@@ -1,27 +1,103 @@
 {
-  "owner": {
-    "id": "owner2",
-    "name": {
+  "id": "nail-art",
+  "slug": "nail-art",
+  "name": {
+    "de": "Nail Art",
+    "fr": "Nail Art",
+    "en": "Nail Art"
+  },
+  "title": {
+    "de": "Nail Art & Design Spezialistin",
+    "fr": "Specialiste Nail Art & Design",
+    "en": "Nail Art & Design Specialist"
+  },
+  "bio": {
+    "de": "Kreative Nagelkünstlerin spezialisiert auf einzigartige Designs und künstlerische Ausdrucksformen. Jedes Design ist ein Unikat.",
+    "fr": "Artiste ongulaire creative specialisee dans les designs uniques et les expressions artistiques. Chaque design est unique.",
+    "en": "Creative nail artist specializing in unique designs and artistic expressions. Every design is one of a kind."
+  },
+  "avatar": "/images/nail-art/avatar.jpg",
+  "contact": {
+    "whatsapp": "+41797654321",
+    "email": "nailart@beauty-wellness-oase.ch"
+  },
+  "theme": {
+    "id": "arty",
+    "cssVariables": {
+      "--color-primary-50": "#fdf4ff",
+      "--color-primary-100": "#fae8ff",
+      "--color-primary-200": "#f5d0fe",
+      "--color-primary-300": "#f0abfc",
+      "--color-primary-400": "#e879f9",
+      "--color-primary-500": "#d946ef",
+      "--color-primary-600": "#c026d3",
+      "--color-primary-700": "#a21caf",
+      "--color-primary-800": "#86198f",
+      "--color-primary-900": "#701a75",
+      "--color-accent-500": "#3b82f6",
+      "--color-accent-600": "#2563eb",
+      "--color-secondary-400": "#fb7185",
+      "--color-secondary-500": "#f43f5e",
+      "--color-bg-primary": "#fafafa",
+      "--color-bg-secondary": "#f5f3ff",
+      "--color-bg-accent": "#fdf2f8",
+      "--color-text-primary": "#18181b",
+      "--color-text-secondary": "#3f3f46",
+      "--color-text-muted": "#71717a",
+      "--color-border": "#e4e4e7",
+      "--gradient-hero": "linear-gradient(135deg, #fdf4ff 0%, #f5f3ff 50%, #fdf2f8 100%)",
+      "--gradient-primary": "linear-gradient(135deg, #d946ef 0%, #c026d3 50%, #a855f7 100%)",
+      "--gradient-artistic": "linear-gradient(135deg, #f43f5e 0%, #d946ef 50%, #3b82f6 100%)",
+      "--font-display": "'Poppins', sans-serif"
+    }
+  },
+  "availability": {
+    "defaultWorkingHours": {
+      "monday": { "start": "10:00", "end": "19:00" },
+      "tuesday": { "start": "10:00", "end": "19:00" },
+      "wednesday": null,
+      "thursday": { "start": "10:00", "end": "19:00" },
+      "friday": { "start": "10:00", "end": "19:00" },
+      "saturday": { "start": "09:00", "end": "17:00" },
+      "sunday": null
+    },
+    "breaks": [{ "start": "13:00", "end": "14:00" }]
+  },
+  "translations": {
+    "heroTitle": {
       "de": "Nail Art",
       "fr": "Nail Art",
       "en": "Nail Art"
     },
-    "slug": "nail-art",
-    "title": {
-      "de": "Nail Art & Design Spezialistin",
-      "fr": "Specialiste Nail Art & Design",
-      "en": "Nail Art & Design Specialist"
+    "heroSubtitle": {
+      "de": "Wo Kreativitat auf Schonheit trifft",
+      "fr": "Ou la creativite rencontre la beaute",
+      "en": "Where Creativity Meets Beauty"
     },
-    "bio": {
-      "de": "Kreative Nagelkünstlerin spezialisiert auf einzigartige Designs und künstlerische Ausdrucksformen. Jedes Design ist ein Unikat.",
-      "fr": "Artiste ongulaire creative specialisee dans les designs uniques et les expressions artistiques. Chaque design est unique.",
-      "en": "Creative nail artist specializing in unique designs and artistic expressions. Every design is one of a kind."
+    "categoriesTitle": {
+      "de": "Kategorien",
+      "fr": "Categories",
+      "en": "Categories"
     },
-    "avatar": "/images/nail-art/avatar.jpg",
-    "theme": "arty",
-    "contact": {
-      "whatsapp": "+41797654321",
-      "email": "nailart@beauty-wellness-oase.ch"
+    "portfolioTitle": {
+      "de": "Portfolio",
+      "fr": "Portfolio",
+      "en": "Portfolio"
+    },
+    "ctaTitle": {
+      "de": "Termin buchen",
+      "fr": "Prendre rendez-vous",
+      "en": "Book Appointment"
+    },
+    "bookLabel": {
+      "de": "Termin buchen",
+      "fr": "Prendre rendez-vous",
+      "en": "Book Appointment"
+    },
+    "comingSoon": {
+      "de": "Demnachst",
+      "fr": "Bientot disponible",
+      "en": "Coming Soon"
     }
   },
   "categories": [
@@ -96,8 +172,16 @@
         "fr": "Soins professionnels des ongles avec vernis au choix.",
         "en": "Professional nail care with polish of your choice."
       },
-      "duration": 45,
-      "price": 45,
+      "variants": [
+        { "duration": 45, "price": 45 }
+      ],
+      "extras": [
+        {
+          "id": "french",
+          "name": { "de": "French", "fr": "French", "en": "French" },
+          "price": 10
+        }
+      ],
       "currency": "CHF",
       "category": "manicure",
       "image": "/images/nail-art/classic-manicure.jpg",
@@ -115,8 +199,31 @@
         "fr": "Application de vernis gel longue tenue avec soins professionnels des ongles.",
         "en": "Long-lasting gel polish application with nail care."
       },
-      "duration": 60,
-      "price": 65,
+      "variants": [
+        { "duration": 60, "price": 65 }
+      ],
+      "extras": [
+        {
+          "id": "french",
+          "name": { "de": "French", "fr": "French", "en": "French" },
+          "price": 10
+        },
+        {
+          "id": "chrome",
+          "name": { "de": "Chrome", "fr": "Chrome", "en": "Chrome" },
+          "price": 15
+        },
+        {
+          "id": "cateye",
+          "name": { "de": "Cat Eye", "fr": "Cat Eye", "en": "Cat Eye" },
+          "price": 15
+        },
+        {
+          "id": "glitter",
+          "name": { "de": "Glitzer", "fr": "Paillettes", "en": "Glitter" },
+          "price": 10
+        }
+      ],
       "currency": "CHF",
       "category": "manicure",
       "image": "/images/nail-art/gel-manicure.jpg",
@@ -134,8 +241,22 @@
         "fr": "Nail art peint a la main personnalise - designs uniques pour chaque client.",
         "en": "Custom hand-painted nail art - unique designs for every client."
       },
-      "duration": 120,
-      "price": 150,
+      "variants": [
+        { "duration": 90, "price": 120 },
+        { "duration": 120, "price": 150 }
+      ],
+      "extras": [
+        {
+          "id": "3d-elements",
+          "name": { "de": "3D Elemente", "fr": "Éléments 3D", "en": "3D Elements" },
+          "price": 20
+        },
+        {
+          "id": "gems",
+          "name": { "de": "Strasssteine", "fr": "Strass", "en": "Gems" },
+          "price": 15
+        }
+      ],
       "currency": "CHF",
       "category": "nail-art",
       "image": "/images/nail-art/artistic-nails.jpg",
@@ -153,8 +274,9 @@
         "fr": "Look french classique avec une touche moderne.",
         "en": "Classic French look with a modern twist."
       },
-      "duration": 75,
-      "price": 85,
+      "variants": [
+        { "duration": 75, "price": 85 }
+      ],
       "currency": "CHF",
       "category": "nail-art",
       "image": "/images/nail-art/french-nails.jpg",
@@ -172,8 +294,27 @@
         "fr": "Extensions d'ongles en acrylique professionnelles avec design au choix.",
         "en": "Professional acrylic nail extensions with your choice of design."
       },
-      "duration": 90,
-      "price": 120,
+      "variants": [
+        { "duration": 90, "price": 120 },
+        { "duration": 120, "price": 150 }
+      ],
+      "extras": [
+        {
+          "id": "french",
+          "name": { "de": "French", "fr": "French", "en": "French" },
+          "price": 10
+        },
+        {
+          "id": "chrome",
+          "name": { "de": "Chrome", "fr": "Chrome", "en": "Chrome" },
+          "price": 15
+        },
+        {
+          "id": "cateye",
+          "name": { "de": "Cat Eye", "fr": "Cat Eye", "en": "Cat Eye" },
+          "price": 15
+        }
+      ],
       "currency": "CHF",
       "category": "extensions",
       "image": "/images/nail-art/acrylic.jpg",
@@ -191,8 +332,27 @@
         "fr": "Extensions d'ongles en gel pour un look naturel et durable.",
         "en": "Gel nail extensions for natural look and durability."
       },
-      "duration": 90,
-      "price": 110,
+      "variants": [
+        { "duration": 90, "price": 110 },
+        { "duration": 120, "price": 140 }
+      ],
+      "extras": [
+        {
+          "id": "french",
+          "name": { "de": "French", "fr": "French", "en": "French" },
+          "price": 10
+        },
+        {
+          "id": "chrome",
+          "name": { "de": "Chrome", "fr": "Chrome", "en": "Chrome" },
+          "price": 15
+        },
+        {
+          "id": "cateye",
+          "name": { "de": "Cat Eye", "fr": "Cat Eye", "en": "Cat Eye" },
+          "price": 15
+        }
+      ],
       "currency": "CHF",
       "category": "extensions",
       "image": "/images/nail-art/gel-extensions.jpg",
@@ -210,15 +370,16 @@
         "fr": "Reparation des ongles endommages ou casses.",
         "en": "Repair of damaged or broken nails."
       },
-      "duration": 30,
-      "price": 25,
+      "variants": [
+        { "duration": 30, "price": 25 }
+      ],
       "currency": "CHF",
       "category": "manicure",
       "image": "/images/nail-art/repair.jpg",
       "featured": false
     }
   ],
-  "portfolio": [
+  "gallery": [
     {
       "src": "/images/nail-art/portfolio/design-1.jpg",
       "alt": {
